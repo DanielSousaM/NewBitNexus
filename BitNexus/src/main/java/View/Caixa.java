@@ -4,6 +4,8 @@
  */
 package View;
 
+import Model.CodigoCaixa;
+
 /**
  *
  * @author ALUNO
@@ -27,24 +29,24 @@ public class Caixa extends javax.swing.JFrame {
     private void initComponents() {
 
         guiasPagamentos = new javax.swing.JTabbedPane();
-        painelRelatorio = new javax.swing.JPanel();
         painelCaixa = new javax.swing.JPanel();
         labelCaixa = new javax.swing.JLabel();
-        rotuloDoCiente = new javax.swing.JLabel();
-        nomeCiente = new javax.swing.JTextField();
+        rotuloDoCliente = new javax.swing.JLabel();
+        nomeCliente = new javax.swing.JTextField();
         seleconarMaquina = new javax.swing.JComboBox<>();
         maquinas = new javax.swing.JLabel();
         formaDoPagamento = new javax.swing.JLabel();
         mesaDeMaquinas = new javax.swing.JScrollPane();
         tabelaDasMaquinas = new javax.swing.JTable();
         imagem = new javax.swing.JLabel();
-        tipoDeServiços = new javax.swing.JLabel();
-        selecionarTipoDeServiço = new javax.swing.JComboBox<>();
+        tipoDeServicos = new javax.swing.JLabel();
+        selecionarTipoDeServico = new javax.swing.JComboBox<>();
         pagamento = new javax.swing.JComboBox<>();
         valor = new javax.swing.JLabel();
-        valorPagor = new javax.swing.JComboBox<>();
+        pagamemtoDoServico = new javax.swing.JComboBox<>();
         botaoLigar = new javax.swing.JToggleButton();
         leiboDeImagemDeFundor = new javax.swing.JLabel();
+        painelRelatorio = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Controle Financeiro");
@@ -55,9 +57,9 @@ public class Caixa extends javax.swing.JFrame {
         labelCaixa.setText("Caixa");
         painelCaixa.add(labelCaixa, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 6, 50, -1));
 
-        rotuloDoCiente.setText("Nome Cliente:");
-        painelCaixa.add(rotuloDoCiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 53, -1, -1));
-        painelCaixa.add(nomeCiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 356, -1));
+        rotuloDoCliente.setText("Nome Cliente:");
+        painelCaixa.add(rotuloDoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 53, -1, -1));
+        painelCaixa.add(nomeCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 356, -1));
 
         seleconarMaquina.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Play 1", "Play 2", "Play 3", "PC 1", "PC 2", "PC 3", "Simulador 1", "Simulador 2", "Simulador 3" }));
         seleconarMaquina.addActionListener(new java.awt.event.ActionListener() {
@@ -92,11 +94,11 @@ public class Caixa extends javax.swing.JFrame {
         imagem.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Blusa Neon (1).jpg")); // NOI18N
         painelCaixa.add(imagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 248));
 
-        tipoDeServiços.setText("Tipo de Serviço");
-        painelCaixa.add(tipoDeServiços, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 81, 85, -1));
+        tipoDeServicos.setText("Tipo de Serviço");
+        painelCaixa.add(tipoDeServicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 81, 85, -1));
 
-        selecionarTipoDeServiço.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cliente", "Bonificação", "Plano\t\t\t", "Teste" }));
-        painelCaixa.add(selecionarTipoDeServiço, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 78, 98, -1));
+        selecionarTipoDeServico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cliente", "Bonificação", "Plano\t\t\t", "Teste" }));
+        painelCaixa.add(selecionarTipoDeServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 78, 98, -1));
 
         pagamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pix", "Cartão", "Dinheiro" }));
         painelCaixa.add(pagamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 198, 106, -1));
@@ -104,39 +106,36 @@ public class Caixa extends javax.swing.JFrame {
         valor.setText("Valor");
         painelCaixa.add(valor, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 161, 40, -1));
 
-        valorPagor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "20 minutos - R$ 20,00", "30 minutos - R$ 40,00", "60 minutos - R$ 60,00", "Plano Amador- R$ 120,00", "Plano Profissional - R$  250,00", "Plano Lendário  - R$ 550,00" }));
-        valorPagor.addActionListener(new java.awt.event.ActionListener() {
+        pagamemtoDoServico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "20 minutos - R$ 20,00", "30 minutos - R$ 40,00", "60 minutos - R$ 60,00", "Plano Amador- R$ 120,00", "Plano Profissional - R$  250,00", "Plano Lendário  - R$ 550,00" }));
+        pagamemtoDoServico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                valorPagorActionPerformed(evt);
+                pagamemtoDoServicoActionPerformed(evt);
             }
         });
-        painelCaixa.add(valorPagor, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 158, -1, -1));
+        painelCaixa.add(pagamemtoDoServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, -1, -1));
 
         botaoLigar.setText("Ligar Maquinar");
+        botaoLigar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoLigarActionPerformed(evt);
+            }
+        });
         painelCaixa.add(botaoLigar, new org.netbeans.lib.awtextra.AbsoluteConstraints(684, 371, -1, -1));
 
         leiboDeImagemDeFundor.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
-        painelCaixa.add(leiboDeImagemDeFundor, new org.netbeans.lib.awtextra.AbsoluteConstraints(-430, -150, 1370, 770));
+        painelCaixa.add(leiboDeImagemDeFundor, new org.netbeans.lib.awtextra.AbsoluteConstraints(-430, -130, 1370, 770));
+
+        guiasPagamentos.addTab("Caixa", painelCaixa);
 
         javax.swing.GroupLayout painelRelatorioLayout = new javax.swing.GroupLayout(painelRelatorio);
         painelRelatorio.setLayout(painelRelatorioLayout);
         painelRelatorioLayout.setHorizontalGroup(
             painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 940, Short.MAX_VALUE)
-            .addGroup(painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(painelRelatorioLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(painelCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         painelRelatorioLayout.setVerticalGroup(
             painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 620, Short.MAX_VALUE)
-            .addGroup(painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(painelRelatorioLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(painelCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGap(0, 640, Short.MAX_VALUE)
         );
 
         guiasPagamentos.addTab("Relatorio", painelRelatorio);
@@ -162,9 +161,29 @@ public class Caixa extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_seleconarMaquinaActionPerformed
 
-    private void valorPagorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valorPagorActionPerformed
+    private void pagamemtoDoServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pagamemtoDoServicoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_valorPagorActionPerformed
+    }//GEN-LAST:event_pagamemtoDoServicoActionPerformed
+
+    private void botaoLigarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLigarActionPerformed
+        // TODO add your handling code here:
+        // criar um objeto da classe
+        CodigoCaixa codigoPagamento = new CodigoCaixa ();
+        
+       // cadastrar os dados dentro da classw CodigoCaixa
+        codigoPagamento.setNomeDoCliente(nomeCliente.getText());
+        
+        // capturar dados da comboBox
+        codigoPagamento.setSeleciaServico((String)selecionarTipoDeServico.getSelectedItem());
+        codigoPagamento.setNomeMaquina((String)seleconarMaquina.getSelectedItem());
+        codigoPagamento.setFormaDePagar((String)pagamento.getSelectedItem());
+        codigoPagamento.setPagamemtoDoServico((String)pagamemtoDoServico.getSelectedItem());
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_botaoLigarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -213,16 +232,16 @@ public class Caixa extends javax.swing.JFrame {
     private javax.swing.JLabel leiboDeImagemDeFundor;
     private javax.swing.JLabel maquinas;
     private javax.swing.JScrollPane mesaDeMaquinas;
-    private javax.swing.JTextField nomeCiente;
+    private javax.swing.JTextField nomeCliente;
+    private javax.swing.JComboBox<String> pagamemtoDoServico;
     private javax.swing.JComboBox<String> pagamento;
     private javax.swing.JPanel painelCaixa;
     private javax.swing.JPanel painelRelatorio;
-    private javax.swing.JLabel rotuloDoCiente;
-    private javax.swing.JComboBox<String> selecionarTipoDeServiço;
+    private javax.swing.JLabel rotuloDoCliente;
+    private javax.swing.JComboBox<String> selecionarTipoDeServico;
     private javax.swing.JComboBox<String> seleconarMaquina;
     private javax.swing.JTable tabelaDasMaquinas;
-    private javax.swing.JLabel tipoDeServiços;
+    private javax.swing.JLabel tipoDeServicos;
     private javax.swing.JLabel valor;
-    private javax.swing.JComboBox<String> valorPagor;
     // End of variables declaration//GEN-END:variables
 }
