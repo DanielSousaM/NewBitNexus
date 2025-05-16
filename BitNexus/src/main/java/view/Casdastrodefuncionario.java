@@ -4,6 +4,8 @@
  */
 package view;
 
+import Model.CadastroDeFuncionarioModel;
+
 /**
  *
  * @author ALUNO
@@ -35,7 +37,7 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         datadenacimento = new javax.swing.JLabel();
         data = new javax.swing.JFormattedTextField();
         genero = new javax.swing.JLabel();
-        opçao = new javax.swing.JComboBox<>();
+        opcao = new javax.swing.JComboBox<>();
         email = new javax.swing.JLabel();
         falaoseeuemail = new javax.swing.JTextField();
         senha = new javax.swing.JLabel();
@@ -72,6 +74,11 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        cpfdigitando.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cpfdigitandoActionPerformed(evt);
+            }
+        });
         jPanel1.add(cpfdigitando, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 173, 115, -1));
 
         datadenacimento.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
@@ -83,14 +90,19 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        data.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dataActionPerformed(evt);
+            }
+        });
         jPanel1.add(data, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 132, 84, -1));
 
         genero.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         genero.setText("Genêro");
         jPanel1.add(genero, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 172, 71, -1));
 
-        opçao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecionar", "Masculino", "Feminino" }));
-        jPanel1.add(opçao, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 173, -1, -1));
+        opcao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecionar", "Masculino", "Feminino" }));
+        jPanel1.add(opcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 173, -1, -1));
 
         email.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         email.setText("E-mail");
@@ -104,6 +116,11 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
 
         entre.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         entre.setText("Cadastra");
+        entre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                entreActionPerformed(evt);
+            }
+        });
         jPanel1.add(entre, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 286, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
@@ -126,6 +143,11 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        telefone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                telefoneActionPerformed(evt);
+            }
+        });
         jPanel1.add(telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 132, 114, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
@@ -149,7 +171,43 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
 
     private void nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_nomeActionPerformed
+
+    private void entreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entreActionPerformed
+        // TODO add your handling code here:
+        
+        // criar um funconario da classe
+        CadastroDeFuncionarioModel funcionario = new CadastroDeFuncionarioModel();
+        // cadastrar os dados dentro da classe funcionário
+        funcionario.setNomecompleto(nomecompleto.getText());
+        funcionario.setDatadenacimento(datadenacimento.getText());
+        funcionario.setFone(fone.getText());
+       
+        //captutar dados da combobox
+        funcionario.setOpcao((String)opcao.getSelectedItem());
+        
+        // capturar dados ao campo password fienld
+        funcionario.setSenha((String)senhadigitada.getPassword().toString());
+        
+        //capturar os dados dos campos formatados
+        funcionario.setCpf(cpfdigitando.getText());
+        funcionario.setDatadenacimento(data.getText());
+        
+        
+    }//GEN-LAST:event_entreActionPerformed
+
+    private void dataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dataActionPerformed
+
+    private void telefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefoneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_telefoneActionPerformed
+
+    private void cpfdigitandoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpfdigitandoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cpfdigitandoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,7 +262,7 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField nome;
     private javax.swing.JLabel nomecompleto;
-    private javax.swing.JComboBox<String> opçao;
+    private javax.swing.JComboBox<String> opcao;
     private javax.swing.JLabel senha;
     private javax.swing.JPasswordField senhadigitada;
     private javax.swing.JFormattedTextField telefone;
