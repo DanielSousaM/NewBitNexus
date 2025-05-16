@@ -66,9 +66,8 @@ public class TelaMonitoramento extends javax.swing.JFrame {
         novoaparelho = new javax.swing.JButton();
         editaraparelho = new javax.swing.JButton();
         excluiaparelho = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
+        gerarrelatorio = new javax.swing.JButton();
+        temadefundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -388,6 +387,11 @@ public class TelaMonitoramento extends javax.swing.JFrame {
         novoaparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         novoaparelho.setForeground(new java.awt.Color(255, 255, 255));
         novoaparelho.setText("NOVO APARELHO");
+        novoaparelho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                novoaparelhoActionPerformed(evt);
+            }
+        });
         getContentPane().add(novoaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 124, 148, -1));
 
         editaraparelho.setBackground(new java.awt.Color(102, 0, 102));
@@ -402,17 +406,24 @@ public class TelaMonitoramento extends javax.swing.JFrame {
         excluiaparelho.setText("EXCLUIR APARELHO");
         getContentPane().add(excluiaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 380, 150, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 520));
+        gerarrelatorio.setBackground(new java.awt.Color(51, 0, 51));
+        gerarrelatorio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        gerarrelatorio.setForeground(new java.awt.Color(255, 255, 255));
+        gerarrelatorio.setText("GERAR RELATORIO");
+        getContentPane().add(gerarrelatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 460, 160, -1));
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 0, 860, 530));
-
-        jLabel23.setText("jLabel23");
-        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, -1, -1));
+        temadefundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
+        getContentPane().add(temadefundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void novoaparelhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novoaparelhoActionPerformed
+        // TODO add your handling code here:
+        TelaNovoAparelho telanovoaparelho = new TelaNovoAparelho();
+        telanovoaparelho.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_novoaparelhoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -452,7 +463,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton editaraparelho;
     private javax.swing.JButton excluiaparelho;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton gerarrelatorio;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -463,10 +474,8 @@ public class TelaMonitoramento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -493,5 +502,6 @@ public class TelaMonitoramento extends javax.swing.JFrame {
     private javax.swing.JPanel telaSimulador1;
     private javax.swing.JPanel telaSimulador2;
     private javax.swing.JPanel telaSimulador3;
+    private javax.swing.JLabel temadefundo;
     // End of variables declaration//GEN-END:variables
 }
