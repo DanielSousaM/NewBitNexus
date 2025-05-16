@@ -4,6 +4,8 @@
  */
 package view;
 
+import Model.cadastrodeplano;
+
 /**
  *
  * @author ALUNO
@@ -73,6 +75,11 @@ public class cadastroPlano2 extends javax.swing.JFrame {
 
         salvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         salvar.setText("Salvar");
+        salvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salvarActionPerformed(evt);
+            }
+        });
         jPanel1.add(salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 372, -1, -1));
         jPanel1.add(plano, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 169, 338, -1));
 
@@ -121,7 +128,18 @@ public class cadastroPlano2 extends javax.swing.JFrame {
 
     private void nomeparaplanoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeparaplanoActionPerformed
         // TODO add your handling code here:
+      
     }//GEN-LAST:event_nomeparaplanoActionPerformed
+
+    private void salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarActionPerformed
+        // TODO add your handling code here:
+        cadastrodeplano cadastro = new cadastrodeplano();
+        cadastro.setNomeplano(nomeparaplano.getText());
+        cadastro.setDriscricaodoplano(plano.getText());
+        cadastro.setValormensal(preco.getText());
+        cadastro.setTaxaadesao(taxa.getText());
+        cadastro.setStatusplano((String)ativodesetivo.getSelectedItem());
+    }//GEN-LAST:event_salvarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,4 +194,10 @@ public class cadastroPlano2 extends javax.swing.JFrame {
     private javax.swing.JLabel taxaadesao;
     private javax.swing.JLabel valormensal;
     // End of variables declaration//GEN-END:variables
+
+
+
+
+
+
 }
