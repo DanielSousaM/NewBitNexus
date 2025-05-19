@@ -8,7 +8,7 @@ package Model;
  *
  * @author ALUNO
  */
-public class casdastrodefuncionarioModel {
+public class CadastroDeFuncionarioModel {
    //cadeia -> string
    //interio-> int
    // real -> doublo ou float
@@ -21,23 +21,31 @@ public class casdastrodefuncionarioModel {
     private String fone;
     private String email;
     private String senha;
-
-    public casdastrodefuncionarioModel(String nomecompleto, String datadenacimento, String cpf, String fone, String email, String senha) {
+    private String opcao;
+            
+    public CadastroDeFuncionarioModel(String nomecompleto, String datadenacimento, String cpf, String fone, String email, String senha,String opcao) {
         this.nomecompleto = nomecompleto;
         this.datadenacimento = datadenacimento;
         this.cpf = cpf;
         this.fone = fone;
         this.email = email;
         this.senha = senha;
+        this.opcao = opcao;
     }
+
+    public CadastroDeFuncionarioModel() {
+    }
+    
+    
     
        // metados getter e setter
 
        //gertter serve para visualizar os dados
+
     public String getNomecompleto() {
         return nomecompleto;
     }
-       // setter serve para guarda dados
+
     public void setNomecompleto(String nomecompleto) {
         this.nomecompleto = nomecompleto;
     }
@@ -81,6 +89,16 @@ public class casdastrodefuncionarioModel {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    public String getOpcao() {
+        return opcao;
+    }
+
+    public void setOpcao(String opcao) {
+        this.opcao = opcao;
+    }
+   
+    
        
 
     

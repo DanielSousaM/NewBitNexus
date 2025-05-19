@@ -48,110 +48,181 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         excluir = new javax.swing.JButton();
         fone = new javax.swing.JLabel();
         telefone = new javax.swing.JFormattedTextField();
-        jLabel2 = new javax.swing.JLabel();
+        voltafuncionario = new javax.swing.JToggleButton();
+        corfundo = new javax.swing.JLabel();
+        menuFuncionario = new javax.swing.JMenuBar();
+        botaoHome = new javax.swing.JMenu();
+        botaoCliente = new javax.swing.JMenu();
+        botaoPlanos = new javax.swing.JMenu();
+        botaoFuncionario = new javax.swing.JMenu();
+        botaoMaquinas = new javax.swing.JMenu();
+        botaoCaixa = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        nomecompleto.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        nomecompleto.setText("Nome completo");
-        jPanel1.add(nomecompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 95, -1, 24));
+        nomecompleto.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        nomecompleto.setText("NOME COMPLETO:");
+        jPanel1.add(nomecompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 160, 24));
 
+        nome.setBackground(new java.awt.Color(102, 0, 102));
+        nome.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        nome.setForeground(new java.awt.Color(255, 255, 255));
         nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nomeActionPerformed(evt);
             }
         });
-        jPanel1.add(nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 97, 262, -1));
+        jPanel1.add(nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 460, 30));
 
-        cpf.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        cpf.setText("CPF");
-        jPanel1.add(cpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 172, -1, -1));
+        cpf.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        cpf.setForeground(new java.awt.Color(255, 255, 255));
+        cpf.setText("CPF:");
+        jPanel1.add(cpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, -1));
 
+        cpfdigitando.setBackground(new java.awt.Color(102, 0, 102));
+        cpfdigitando.setForeground(new java.awt.Color(255, 255, 255));
         try {
             cpfdigitando.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        cpfdigitando.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         cpfdigitando.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cpfdigitandoActionPerformed(evt);
             }
         });
-        jPanel1.add(cpfdigitando, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 173, 115, -1));
+        jPanel1.add(cpfdigitando, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 220, 30));
 
-        datadenacimento.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        datadenacimento.setText("Data de nacimento");
-        jPanel1.add(datadenacimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 131, -1, -1));
+        datadenacimento.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        datadenacimento.setForeground(new java.awt.Color(255, 255, 255));
+        datadenacimento.setText("DATA DE NASCIMENTO: ");
+        jPanel1.add(datadenacimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 190, -1));
 
+        data.setBackground(new java.awt.Color(102, 0, 102));
+        data.setForeground(new java.awt.Color(255, 255, 255));
         try {
             data.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        data.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         data.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dataActionPerformed(evt);
             }
         });
-        jPanel1.add(data, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 132, 84, -1));
+        jPanel1.add(data, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 150, 30));
 
-        genero.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        genero.setText("Genêro");
-        jPanel1.add(genero, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 172, 71, -1));
+        genero.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        genero.setForeground(new java.awt.Color(255, 255, 255));
+        genero.setText("GENÊRO:");
+        jPanel1.add(genero, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 190, 80, -1));
 
+        opcao.setBackground(new java.awt.Color(102, 0, 102));
+        opcao.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        opcao.setForeground(new java.awt.Color(255, 255, 255));
         opcao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecionar", "Masculino", "Feminino" }));
-        jPanel1.add(opcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 173, -1, -1));
+        jPanel1.add(opcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 230, 30));
 
-        email.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        email.setText("E-mail");
-        jPanel1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 207, -1, -1));
-        jPanel1.add(falaoseeuemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 208, 340, -1));
+        email.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        email.setForeground(new java.awt.Color(255, 255, 255));
+        email.setText("E-MAIL:");
+        jPanel1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 60, -1));
 
-        senha.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        senha.setText("Senha");
-        jPanel1.add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 242, -1, -1));
-        jPanel1.add(senhadigitada, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 243, 161, -1));
+        falaoseeuemail.setBackground(new java.awt.Color(102, 0, 102));
+        falaoseeuemail.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        falaoseeuemail.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(falaoseeuemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 540, 30));
 
-        entre.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        entre.setText("Cadastra");
+        senha.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        senha.setForeground(new java.awt.Color(255, 255, 255));
+        senha.setText("SENHA:");
+        jPanel1.add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 70, -1));
+
+        senhadigitada.setBackground(new java.awt.Color(102, 0, 102));
+        senhadigitada.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        senhadigitada.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(senhadigitada, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 280, 30));
+
+        entre.setBackground(new java.awt.Color(102, 0, 102));
+        entre.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        entre.setForeground(new java.awt.Color(255, 255, 255));
+        entre.setText("CADASTRAR");
         entre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 entreActionPerformed(evt);
             }
         });
-        jPanel1.add(entre, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 286, -1, -1));
+        jPanel1.add(entre, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 130, 30));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        jLabel1.setText(" Cadastro de Funcionário");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 17, -1, 47));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("CADASTRO DE FUNCIONARIO");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 290, 47));
 
-        editar.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        editar.setText("Editar");
-        jPanel1.add(editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 286, -1, -1));
+        editar.setBackground(new java.awt.Color(102, 0, 102));
+        editar.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        editar.setForeground(new java.awt.Color(255, 255, 255));
+        editar.setText("EDITAR");
+        jPanel1.add(editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 370, -1, -1));
 
-        excluir.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        excluir.setText("Excluir");
-        jPanel1.add(excluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 286, -1, -1));
+        excluir.setBackground(new java.awt.Color(102, 0, 102));
+        excluir.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        excluir.setForeground(new java.awt.Color(255, 255, 255));
+        excluir.setText("EXCLUIR");
+        jPanel1.add(excluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, -1, -1));
 
-        fone.setText("Fone");
-        jPanel1.add(fone, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 135, -1, -1));
+        fone.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        fone.setForeground(new java.awt.Color(255, 255, 255));
+        fone.setText("FONE:");
+        jPanel1.add(fone, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 50, -1));
 
+        telefone.setBackground(new java.awt.Color(102, 0, 102));
+        telefone.setForeground(new java.awt.Color(255, 255, 255));
         try {
             telefone.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("## #####-####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        telefone.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         telefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 telefoneActionPerformed(evt);
             }
         });
-        jPanel1.add(telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 132, 114, -1));
+        jPanel1.add(telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 150, 190, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-13, -4, 570, 380));
+        voltafuncionario.setBackground(new java.awt.Color(102, 0, 102));
+        voltafuncionario.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        voltafuncionario.setForeground(new java.awt.Color(255, 255, 255));
+        voltafuncionario.setText("VOLTAR");
+        jPanel1.add(voltafuncionario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 110, -1));
+
+        corfundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\OneDrive - SENACTO\\Documents\\NetBeansProjects\\NewBitNexus\\BitNexus\\src\\main\\java\\img\\Cadastro (2).png")); // NOI18N
+        jPanel1.add(corfundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 950, 570));
+
+        botaoHome.setText("HOME");
+        menuFuncionario.add(botaoHome);
+
+        botaoCliente.setText("CLIENTE");
+        menuFuncionario.add(botaoCliente);
+
+        botaoPlanos.setText("PLANOS");
+        menuFuncionario.add(botaoPlanos);
+
+        botaoFuncionario.setText("FUNCIONÁRIO");
+        menuFuncionario.add(botaoFuncionario);
+
+        botaoMaquinas.setText("MÁQUINAS");
+        menuFuncionario.add(botaoMaquinas);
+
+        botaoCaixa.setText("CAIXA");
+        menuFuncionario.add(botaoCaixa);
+
+        setJMenuBar(menuFuncionario);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -245,6 +316,13 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu botaoCaixa;
+    private javax.swing.JMenu botaoCliente;
+    private javax.swing.JMenu botaoFuncionario;
+    private javax.swing.JMenu botaoHome;
+    private javax.swing.JMenu botaoMaquinas;
+    private javax.swing.JMenu botaoPlanos;
+    private javax.swing.JLabel corfundo;
     private javax.swing.JLabel cpf;
     private javax.swing.JFormattedTextField cpfdigitando;
     private javax.swing.JFormattedTextField data;
@@ -257,14 +335,15 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
     private javax.swing.JLabel fone;
     private javax.swing.JLabel genero;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JMenuBar menuFuncionario;
     private javax.swing.JTextField nome;
     private javax.swing.JLabel nomecompleto;
     private javax.swing.JComboBox<String> opcao;
     private javax.swing.JLabel senha;
     private javax.swing.JPasswordField senhadigitada;
     private javax.swing.JFormattedTextField telefone;
+    private javax.swing.JToggleButton voltafuncionario;
     // End of variables declaration//GEN-END:variables
 }

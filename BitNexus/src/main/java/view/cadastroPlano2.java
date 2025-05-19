@@ -43,84 +43,151 @@ public class cadastroPlano2 extends javax.swing.JFrame {
         valormensal = new javax.swing.JLabel();
         preco = new javax.swing.JTextField();
         nomeparaplano = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        imagemfundo = new javax.swing.JLabel();
+        menuPlano = new javax.swing.JMenuBar();
+        botaoHome = new javax.swing.JMenu();
+        botaoCliente = new javax.swing.JMenu();
+        botaoFuncionario = new javax.swing.JMenu();
+        botaoMaquinas = new javax.swing.JMenu();
+        botaoCaixo = new javax.swing.JMenu();
+        botaoPlanos = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        taxaadesao.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        taxaadesao.setText("Taxa de Adesão");
-        jPanel1.add(taxaadesao, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 209, -1, -1));
+        taxaadesao.setBackground(new java.awt.Color(102, 0, 102));
+        taxaadesao.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        taxaadesao.setForeground(new java.awt.Color(255, 255, 255));
+        taxaadesao.setText("TAXA DE ADESÃO: ");
+        jPanel1.add(taxaadesao, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, -1, -1));
 
-        cadastrodeplano.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        cadastrodeplano.setText("Cadastro de Plano ");
-        jPanel1.add(cadastrodeplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 31, -1, -1));
-        jPanel1.add(taxa, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 232, 85, -1));
+        cadastrodeplano.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        cadastrodeplano.setForeground(new java.awt.Color(255, 255, 255));
+        cadastrodeplano.setText("CADASTRO DE PLANO");
+        jPanel1.add(cadastrodeplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 220, -1));
 
-        statusplano.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        statusplano.setText("Status do Plano");
-        jPanel1.add(statusplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 272, -1, -1));
+        taxa.setBackground(new java.awt.Color(102, 0, 102));
+        taxa.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jPanel1.add(taxa, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 150, 30));
 
-        nomeplano.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        nomeplano.setText("Nome de Plano");
-        jPanel1.add(nomeplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 71, 97, -1));
+        statusplano.setBackground(new java.awt.Color(102, 0, 102));
+        statusplano.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        statusplano.setForeground(new java.awt.Color(255, 255, 255));
+        statusplano.setText("STATUS DO PLANO: ");
+        jPanel1.add(statusplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, 20));
 
+        nomeplano.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        nomeplano.setForeground(new java.awt.Color(255, 255, 255));
+        nomeplano.setText("NOME DO PLANO:");
+        jPanel1.add(nomeplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 140, -1));
+
+        ativodesetivo.setBackground(new java.awt.Color(102, 0, 102));
+        ativodesetivo.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        ativodesetivo.setForeground(new java.awt.Color(255, 255, 255));
         ativodesetivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ativo", "Desativado" }));
-        jPanel1.add(ativodesetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 295, -1, -1));
+        ativodesetivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ativodesetivoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ativodesetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 150, -1));
 
-        driscricaodoplano.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        driscricaodoplano.setText("Discrição do plano");
+        driscricaodoplano.setBackground(new java.awt.Color(102, 0, 102));
+        driscricaodoplano.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        driscricaodoplano.setForeground(new java.awt.Color(255, 255, 255));
+        driscricaodoplano.setText("DESCRIÇÃO DO PLANO: ");
         jPanel1.add(driscricaodoplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 140, -1, -1));
 
-        salvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        salvar.setText("Salvar");
+        salvar.setBackground(new java.awt.Color(102, 0, 102));
+        salvar.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        salvar.setForeground(new java.awt.Color(255, 255, 255));
+        salvar.setText("SALVAR");
         salvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salvarActionPerformed(evt);
             }
         });
-        jPanel1.add(salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 372, -1, -1));
-        jPanel1.add(plano, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 169, 338, -1));
+        jPanel1.add(salvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, -1, -1));
 
-        mudar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        mudar.setText("Editar");
-        jPanel1.add(mudar, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 372, -1, -1));
+        plano.setBackground(new java.awt.Color(102, 0, 102));
+        plano.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        plano.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(plano, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 420, 30));
 
-        apaga.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        apaga.setText("Excluir");
-        jPanel1.add(apaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 372, -1, -1));
+        mudar.setBackground(new java.awt.Color(102, 0, 102));
+        mudar.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        mudar.setForeground(new java.awt.Color(255, 255, 255));
+        mudar.setText("EDITAR");
+        jPanel1.add(mudar, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, -1, -1));
 
-        valormensal.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        valormensal.setText("Valor Mensal");
-        jPanel1.add(valormensal, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 209, -1, -1));
-        jPanel1.add(preco, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 232, 76, -1));
+        apaga.setBackground(new java.awt.Color(102, 0, 102));
+        apaga.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        apaga.setForeground(new java.awt.Color(255, 255, 255));
+        apaga.setText("EXCLUIR");
+        apaga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                apagaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(apaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 320, -1, -1));
 
+        valormensal.setBackground(new java.awt.Color(102, 0, 102));
+        valormensal.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        valormensal.setForeground(new java.awt.Color(255, 255, 255));
+        valormensal.setText("VALOR MENSAL:");
+        jPanel1.add(valormensal, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, -1));
+
+        preco.setBackground(new java.awt.Color(102, 0, 102));
+        preco.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        preco.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(preco, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 140, 30));
+
+        nomeparaplano.setBackground(new java.awt.Color(102, 0, 102));
+        nomeparaplano.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        nomeparaplano.setForeground(new java.awt.Color(255, 255, 255));
         nomeparaplano.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nomeparaplanoActionPerformed(evt);
             }
         });
-        jPanel1.add(nomeparaplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 340, -1));
+        jPanel1.add(nomeparaplano, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 450, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 480));
+        imagemfundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\OneDrive - SENACTO\\Documents\\NetBeansProjects\\NewBitNexus\\BitNexus\\src\\main\\java\\img\\Cadastro (2).png")); // NOI18N
+        jPanel1.add(imagemfundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 6, 930, 520));
+
+        botaoHome.setText("Home");
+        menuPlano.add(botaoHome);
+
+        botaoCliente.setText("Cliente");
+        menuPlano.add(botaoCliente);
+
+        botaoFuncionario.setText("Funcionário");
+        menuPlano.add(botaoFuncionario);
+
+        botaoMaquinas.setText("Máquinas");
+        menuPlano.add(botaoMaquinas);
+
+        botaoCaixo.setText("Caixa");
+        menuPlano.add(botaoCaixo);
+
+        botaoPlanos.setText("Planos");
+        menuPlano.add(botaoPlanos);
+
+        setJMenuBar(menuPlano);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(114, 114, 114))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -140,6 +207,14 @@ public class cadastroPlano2 extends javax.swing.JFrame {
         cadastro.setTaxaadesao(taxa.getText());
         cadastro.setStatusplano((String)ativodesetivo.getSelectedItem());
     }//GEN-LAST:event_salvarActionPerformed
+
+    private void ativodesetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativodesetivoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ativodesetivoActionPerformed
+
+    private void apagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apagaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_apagaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,10 +254,17 @@ public class cadastroPlano2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton apaga;
     private javax.swing.JComboBox<String> ativodesetivo;
+    private javax.swing.JMenu botaoCaixo;
+    private javax.swing.JMenu botaoCliente;
+    private javax.swing.JMenu botaoFuncionario;
+    private javax.swing.JMenu botaoHome;
+    private javax.swing.JMenu botaoMaquinas;
+    private javax.swing.JMenu botaoPlanos;
     private javax.swing.JLabel cadastrodeplano;
     private javax.swing.JLabel driscricaodoplano;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel imagemfundo;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuBar menuPlano;
     private javax.swing.JButton mudar;
     private javax.swing.JTextField nomeparaplano;
     private javax.swing.JLabel nomeplano;
