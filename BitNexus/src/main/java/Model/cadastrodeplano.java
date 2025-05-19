@@ -22,6 +22,9 @@ public class cadastrodeplano {
         this.taxaadesao = taxaadesao;
         this.statusplano = statusplano;
     }
+    public cadastrodeplano(){
+        
+    }
 
     public String getNomeplano() {
         return nomeplano;
