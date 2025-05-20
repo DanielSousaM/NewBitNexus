@@ -27,11 +27,12 @@ public class LoginView extends javax.swing.JFrame {
     private void initComponents() {
 
         painel1 = new javax.swing.JPanel();
-        campoCpf1 = new javax.swing.JTextField();
         campoCpf = new javax.swing.JLabel();
-        campoSenha = new javax.swing.JPasswordField();
         varivelSenha = new javax.swing.JLabel();
         butomLogin = new javax.swing.JButton();
+        butonEsqueciSenha = new javax.swing.JLabel();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        campoCpf1 = new javax.swing.JFormattedTextField();
         paonelLayout1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -39,58 +40,96 @@ public class LoginView extends javax.swing.JFrame {
 
         painel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        campoCpf1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoCpf1ActionPerformed(evt);
-            }
-        });
-        painel1.add(campoCpf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 290, -1));
-
         campoCpf.setBackground(new java.awt.Color(255, 255, 255));
-        campoCpf.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        campoCpf.setText("CPF");
-        painel1.add(campoCpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 200, 20));
-
-        campoSenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoSenhaActionPerformed(evt);
-            }
-        });
-        painel1.add(campoSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 290, -1));
+        campoCpf.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        campoCpf.setForeground(new java.awt.Color(255, 255, 255));
+        campoCpf.setText("CPF:");
+        painel1.add(campoCpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 200, 20));
 
         varivelSenha.setBackground(new java.awt.Color(255, 255, 255));
-        varivelSenha.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        varivelSenha.setText("Senha");
-        painel1.add(varivelSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 120, 60));
+        varivelSenha.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        varivelSenha.setForeground(new java.awt.Color(255, 255, 255));
+        varivelSenha.setText("SENHA:");
+        painel1.add(varivelSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 120, 60));
 
-        butomLogin.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        butomLogin.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         butomLogin.setText("Login");
+        butomLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                butomLoginMouseClicked(evt);
+            }
+        });
         butomLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 butomLoginActionPerformed(evt);
             }
         });
-        painel1.add(butomLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
+        painel1.add(butomLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
+
+        butonEsqueciSenha.setBackground(new java.awt.Color(102, 102, 102));
+        butonEsqueciSenha.setFont(new java.awt.Font("Segoe UI", 2, 16)); // NOI18N
+        butonEsqueciSenha.setForeground(new java.awt.Color(255, 255, 255));
+        butonEsqueciSenha.setText("esqueci a senha");
+        butonEsqueciSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                butonEsqueciSenhaMouseClicked(evt);
+            }
+        });
+        painel1.add(butonEsqueciSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, -1));
+
+        jFormattedTextField1.setBackground(new java.awt.Color(102, 0, 102));
+        jFormattedTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        try {
+            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###-###")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFormattedTextField1ActionPerformed(evt);
+            }
+        });
+        painel1.add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 290, -1));
+
+        campoCpf1.setBackground(new java.awt.Color(102, 0, 102));
+        try {
+            campoCpf1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        painel1.add(campoCpf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 290, -1));
 
         paonelLayout1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Login (2).png")); // NOI18N
-        painel1.add(paonelLayout1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 590, 710));
+        painel1.add(paonelLayout1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 710));
 
         getContentPane().add(painel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void campoCpf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCpf1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campoCpf1ActionPerformed
-
-    private void campoSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoSenhaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campoSenhaActionPerformed
-
     private void butomLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butomLoginActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_butomLoginActionPerformed
+
+    private void butonEsqueciSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_butonEsqueciSenhaMouseClicked
+        // TODO add your handling code here:
+        TelaEsqueciSenha esquecish= new TelaEsqueciSenha();
+        esquecish.setVisible(true);
+        dispose();
+        
+    }//GEN-LAST:event_butonEsqueciSenhaMouseClicked
+
+    private void butomLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_butomLoginMouseClicked
+        // TODO add your handling code here:
+        
+        
+        
+        
+    }//GEN-LAST:event_butomLoginMouseClicked
+
+    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,9 +168,10 @@ public class LoginView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton butomLogin;
+    private javax.swing.JLabel butonEsqueciSenha;
     private javax.swing.JLabel campoCpf;
-    private javax.swing.JTextField campoCpf1;
-    private javax.swing.JPasswordField campoSenha;
+    private javax.swing.JFormattedTextField campoCpf1;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JPanel painel1;
     private javax.swing.JLabel paonelLayout1;
     private javax.swing.JLabel varivelSenha;
