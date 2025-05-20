@@ -48,9 +48,9 @@ public class cadastroPlano2 extends javax.swing.JFrame {
         botaoHome = new javax.swing.JMenu();
         botaoCliente = new javax.swing.JMenu();
         botaoFuncionario = new javax.swing.JMenu();
-        botaoMaquinas = new javax.swing.JMenu();
-        botaoCaixo = new javax.swing.JMenu();
         botaoPlanos = new javax.swing.JMenu();
+        botaoMaquinas = new javax.swing.JMenu();
+        botaoCaixa = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -156,23 +156,23 @@ public class cadastroPlano2 extends javax.swing.JFrame {
         imagemfundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\OneDrive - SENACTO\\Documents\\NetBeansProjects\\NewBitNexus\\BitNexus\\src\\main\\java\\img\\Cadastro (2).png")); // NOI18N
         jPanel1.add(imagemfundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 6, 930, 520));
 
-        botaoHome.setText("Home");
+        botaoHome.setText("HOME");
         menuPlano.add(botaoHome);
 
-        botaoCliente.setText("Cliente");
+        botaoCliente.setText("CLIENTE");
         menuPlano.add(botaoCliente);
 
-        botaoFuncionario.setText("Funcionário");
+        botaoFuncionario.setText("FUNCIONÁIO");
         menuPlano.add(botaoFuncionario);
 
-        botaoMaquinas.setText("Máquinas");
+        botaoPlanos.setText("PLANOS");
+        menuPlano.add(botaoPlanos);
+
+        botaoMaquinas.setText("MÁQUINAS");
         menuPlano.add(botaoMaquinas);
 
-        botaoCaixo.setText("Caixa");
-        menuPlano.add(botaoCaixo);
-
-        botaoPlanos.setText("Planos");
-        menuPlano.add(botaoPlanos);
+        botaoCaixa.setText("CAIXA");
+        menuPlano.add(botaoCaixa);
 
         setJMenuBar(menuPlano);
 
@@ -254,7 +254,7 @@ public class cadastroPlano2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton apaga;
     private javax.swing.JComboBox<String> ativodesetivo;
-    private javax.swing.JMenu botaoCaixo;
+    private javax.swing.JMenu botaoCaixa;
     private javax.swing.JMenu botaoCliente;
     private javax.swing.JMenu botaoFuncionario;
     private javax.swing.JMenu botaoHome;

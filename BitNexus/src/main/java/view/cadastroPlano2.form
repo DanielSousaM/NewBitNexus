@@ -6,32 +6,32 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="botaoHome">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Home"/>
+            <Property name="text" type="java.lang.String" value="HOME"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="botaoCliente">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Cliente"/>
+            <Property name="text" type="java.lang.String" value="CLIENTE"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="botaoFuncionario">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
-          </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="botaoMaquinas">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="M&#xe1;quinas"/>
-          </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="botaoCaixo">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Caixa"/>
+            <Property name="text" type="java.lang.String" value="FUNCION&#xc1;IO"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="botaoPlanos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Planos"/>
+            <Property name="text" type="java.lang.String" value="PLANOS"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="botaoMaquinas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="M&#xc1;QUINAS"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="botaoCaixa">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CAIXA"/>
           </Properties>
         </Menu>
       </SubComponents>

@@ -53,8 +53,8 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         menuFuncionario = new javax.swing.JMenuBar();
         botaoHome = new javax.swing.JMenu();
         botaoCliente = new javax.swing.JMenu();
+        botaoFuncionário = new javax.swing.JMenu();
         botaoPlanos = new javax.swing.JMenu();
-        botaoFuncionario = new javax.swing.JMenu();
         botaoMaquinas = new javax.swing.JMenu();
         botaoCaixa = new javax.swing.JMenu();
 
@@ -210,11 +210,11 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         botaoCliente.setText("CLIENTE");
         menuFuncionario.add(botaoCliente);
 
+        botaoFuncionário.setText("FUNCIONÁRIO");
+        menuFuncionario.add(botaoFuncionário);
+
         botaoPlanos.setText("PLANOS");
         menuFuncionario.add(botaoPlanos);
-
-        botaoFuncionario.setText("FUNCIONÁRIO");
-        menuFuncionario.add(botaoFuncionario);
 
         botaoMaquinas.setText("MÁQUINAS");
         menuFuncionario.add(botaoMaquinas);
@@ -318,7 +318,7 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu botaoCaixa;
     private javax.swing.JMenu botaoCliente;
-    private javax.swing.JMenu botaoFuncionario;
+    private javax.swing.JMenu botaoFuncionário;
     private javax.swing.JMenu botaoHome;
     private javax.swing.JMenu botaoMaquinas;
     private javax.swing.JMenu botaoPlanos;
