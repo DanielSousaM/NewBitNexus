@@ -16,14 +16,14 @@
             <Property name="text" type="java.lang.String" value="CLIENTE"/>
           </Properties>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="botaoFuncion&#xe1;rio">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="FUNCION&#xc1;RIO"/>
+          </Properties>
+        </Menu>
         <Menu class="javax.swing.JMenu" name="botaoPlanos">
           <Properties>
             <Property name="text" type="java.lang.String" value="PLANOS"/>
-          </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="botaoFuncionario">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="FUNCION&#xc1;RIO"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="botaoMaquinas">
