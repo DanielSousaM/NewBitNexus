@@ -89,7 +89,6 @@ public class Caixa extends javax.swing.JFrame {
         painelCaixa.add(mesaDeMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 350, 343));
 
         imagem.setBackground(new java.awt.Color(0, 0, 0));
-        imagem.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Blusa Neon (1).jpg")); // NOI18N
         painelCaixa.add(imagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 248));
 
         tipoDeServiços.setText("Tipo de Serviço");
@@ -122,7 +121,7 @@ public class Caixa extends javax.swing.JFrame {
         painelRelatorio.setLayout(painelRelatorioLayout);
         painelRelatorioLayout.setHorizontalGroup(
             painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 940, Short.MAX_VALUE)
+            .addGap(0, 950, Short.MAX_VALUE)
             .addGroup(painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(painelRelatorioLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -131,7 +130,7 @@ public class Caixa extends javax.swing.JFrame {
         );
         painelRelatorioLayout.setVerticalGroup(
             painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 620, Short.MAX_VALUE)
+            .addGap(0, 630, Short.MAX_VALUE)
             .addGroup(painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(painelRelatorioLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)

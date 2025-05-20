@@ -68,6 +68,13 @@ public class TelaMonitoramento extends javax.swing.JFrame {
         excluiaparelho = new javax.swing.JButton();
         gerarrelatorio = new javax.swing.JButton();
         temadefundo = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        botaoHome = new javax.swing.JMenu();
+        botaoCliente = new javax.swing.JMenu();
+        botaoFuncionario = new javax.swing.JMenu();
+        botaoPlanos = new javax.swing.JMenu();
+        botaoMaquinas = new javax.swing.JMenu();
+        botaoCaixa = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -75,6 +82,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
         telaPC1.setBackground(new java.awt.Color(204, 204, 204));
         telaPC1.setForeground(new java.awt.Color(0, 0, 0));
 
+        pc1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         pc1.setForeground(new java.awt.Color(0, 0, 0));
         pc1.setText("PC 1 ");
 
@@ -104,11 +112,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaPC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 140, -1));
+        getContentPane().add(telaPC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 140, -1));
 
         telaPlay2.setBackground(new java.awt.Color(204, 204, 204));
         telaPlay2.setForeground(new java.awt.Color(0, 0, 0));
 
+        play2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         play2.setForeground(new java.awt.Color(0, 0, 0));
         play2.setText("PLAY 2");
 
@@ -135,14 +144,15 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(jLabel20)
                     .addComponent(play2))
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaPlay2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 140, 100));
+        getContentPane().add(telaPlay2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 140, 100));
 
         telaPlay3.setBackground(new java.awt.Color(204, 204, 204));
         telaPlay3.setForeground(new java.awt.Color(0, 0, 0));
 
+        play3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         play3.setForeground(new java.awt.Color(0, 0, 0));
         play3.setText("PLAY 3");
 
@@ -172,11 +182,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaPlay3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, 130, -1));
+        getContentPane().add(telaPlay3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 130, -1));
 
         telaPlay1.setBackground(new java.awt.Color(204, 204, 204));
         telaPlay1.setForeground(new java.awt.Color(0, 0, 0));
 
+        play1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         play1.setForeground(new java.awt.Color(0, 0, 0));
         play1.setText("PLAY 1");
 
@@ -206,11 +217,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addContainerGap(76, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaPlay1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 140, -1));
+        getContentPane().add(telaPlay1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 140, -1));
 
         telaPC3.setBackground(new java.awt.Color(204, 204, 204));
         telaPC3.setForeground(new java.awt.Color(0, 0, 0));
 
+        pc3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         pc3.setForeground(new java.awt.Color(0, 0, 0));
         pc3.setText("PC 3");
 
@@ -227,7 +239,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addComponent(pc3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel15)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         telaPC3Layout.setVerticalGroup(
             telaPC3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,11 +252,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaPC3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, 130, -1));
+        getContentPane().add(telaPC3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 220, 130, -1));
 
         telaSimulador1.setBackground(new java.awt.Color(204, 204, 204));
         telaSimulador1.setForeground(new java.awt.Color(0, 0, 0));
 
+        simulador1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         simulador1.setForeground(new java.awt.Color(0, 0, 0));
         simulador1.setText("SIMULADOR 1");
 
@@ -255,7 +268,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
         telaSimulador1Layout.setHorizontalGroup(
             telaSimulador1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaSimulador1Layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
@@ -274,11 +287,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaSimulador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 140, -1));
+        getContentPane().add(telaSimulador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 140, -1));
 
         telaSimulador2.setBackground(new java.awt.Color(204, 204, 204));
         telaSimulador2.setForeground(new java.awt.Color(0, 0, 0));
 
+        simulador2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         simulador2.setForeground(new java.awt.Color(0, 0, 0));
         simulador2.setText("SIMULADOR 2");
 
@@ -289,7 +303,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
         telaSimulador2Layout.setHorizontalGroup(
             telaSimulador2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaSimulador2Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel17)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel11)
@@ -308,11 +322,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaSimulador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 140, -1));
+        getContentPane().add(telaSimulador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 140, -1));
 
         telaSimulador3.setBackground(new java.awt.Color(204, 204, 204));
         telaSimulador3.setForeground(new java.awt.Color(0, 0, 0));
 
+        simulador3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         simulador3.setForeground(new java.awt.Color(0, 0, 0));
         simulador3.setText("SIMULADOR 3");
 
@@ -325,7 +340,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaSimulador3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel18)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(simulador3)
@@ -342,11 +357,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaSimulador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 350, 130, -1));
+        getContentPane().add(telaSimulador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, 130, -1));
 
         telaPC2.setBackground(new java.awt.Color(204, 204, 204));
         telaPC2.setForeground(new java.awt.Color(0, 0, 0));
 
+        pc2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         pc2.setForeground(new java.awt.Color(0, 0, 0));
         pc2.setText("PC 2");
 
@@ -373,18 +389,18 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                     .addComponent(jLabel14)
                     .addComponent(jLabel8)
                     .addComponent(pc2))
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
-        getContentPane().add(telaPC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 140, 100));
+        getContentPane().add(telaPC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 140, 100));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("MONITORAMENTO DE EQUIPAMENTOS");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 25, 280, 33));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 410, 33));
 
         novoaparelho.setBackground(new java.awt.Color(102, 0, 102));
-        novoaparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        novoaparelho.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         novoaparelho.setForeground(new java.awt.Color(255, 255, 255));
         novoaparelho.setText("NOVO APARELHO");
         novoaparelho.addActionListener(new java.awt.event.ActionListener() {
@@ -392,28 +408,48 @@ public class TelaMonitoramento extends javax.swing.JFrame {
                 novoaparelhoActionPerformed(evt);
             }
         });
-        getContentPane().add(novoaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 124, 148, -1));
+        getContentPane().add(novoaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 124, 200, -1));
 
         editaraparelho.setBackground(new java.awt.Color(102, 0, 102));
-        editaraparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        editaraparelho.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         editaraparelho.setForeground(new java.awt.Color(255, 255, 255));
         editaraparelho.setText("EDITAR APARELHO");
-        getContentPane().add(editaraparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 253, 145, -1));
+        getContentPane().add(editaraparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 253, 200, -1));
 
         excluiaparelho.setBackground(new java.awt.Color(102, 0, 102));
-        excluiaparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        excluiaparelho.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         excluiaparelho.setForeground(new java.awt.Color(255, 255, 255));
         excluiaparelho.setText("EXCLUIR APARELHO");
-        getContentPane().add(excluiaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 380, 150, -1));
+        getContentPane().add(excluiaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 380, 200, -1));
 
         gerarrelatorio.setBackground(new java.awt.Color(51, 0, 51));
-        gerarrelatorio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        gerarrelatorio.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         gerarrelatorio.setForeground(new java.awt.Color(255, 255, 255));
         gerarrelatorio.setText("GERAR RELATORIO");
-        getContentPane().add(gerarrelatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 460, 160, -1));
+        getContentPane().add(gerarrelatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 470, 220, -1));
 
         temadefundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
-        getContentPane().add(temadefundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 520));
+        getContentPane().add(temadefundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 530));
+
+        botaoHome.setText("HOME");
+        jMenuBar1.add(botaoHome);
+
+        botaoCliente.setText("CLIENTE");
+        jMenuBar1.add(botaoCliente);
+
+        botaoFuncionario.setText("FUNCIONÁRIO");
+        jMenuBar1.add(botaoFuncionario);
+
+        botaoPlanos.setText("PLANOS ");
+        jMenuBar1.add(botaoPlanos);
+
+        botaoMaquinas.setText("MÁQUINAS");
+        jMenuBar1.add(botaoMaquinas);
+
+        botaoCaixa.setText("CAIXA");
+        jMenuBar1.add(botaoCaixa);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -461,6 +497,12 @@ public class TelaMonitoramento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu botaoCaixa;
+    private javax.swing.JMenu botaoCliente;
+    private javax.swing.JMenu botaoFuncionario;
+    private javax.swing.JMenu botaoHome;
+    private javax.swing.JMenu botaoMaquinas;
+    private javax.swing.JMenu botaoPlanos;
     private javax.swing.JButton editaraparelho;
     private javax.swing.JButton excluiaparelho;
     private javax.swing.JButton gerarrelatorio;
@@ -483,6 +525,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JButton novoaparelho;
     private javax.swing.JLabel pc1;
     private javax.swing.JLabel pc2;

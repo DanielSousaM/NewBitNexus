@@ -43,12 +43,12 @@ public class TelaNovoAparelho extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jLabel1.setText("NOVO APARELHO");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 22, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 40, 180, -1));
 
         voltarnovoaparelho.setBackground(new java.awt.Color(102, 0, 102));
-        voltarnovoaparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        voltarnovoaparelho.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         voltarnovoaparelho.setForeground(new java.awt.Color(255, 255, 255));
         voltarnovoaparelho.setText("VOLTAR");
         voltarnovoaparelho.addActionListener(new java.awt.event.ActionListener() {
@@ -56,10 +56,10 @@ public class TelaNovoAparelho extends javax.swing.JFrame {
                 voltarnovoaparelhoActionPerformed(evt);
             }
         });
-        jPanel1.add(voltarnovoaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 277, 121, -1));
+        jPanel1.add(voltarnovoaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 121, -1));
 
         confirmaraparelho.setBackground(new java.awt.Color(102, 0, 102));
-        confirmaraparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        confirmaraparelho.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         confirmaraparelho.setForeground(new java.awt.Color(255, 255, 255));
         confirmaraparelho.setText("CONFIRMAR");
         confirmaraparelho.addActionListener(new java.awt.event.ActionListener() {
@@ -67,31 +67,31 @@ public class TelaNovoAparelho extends javax.swing.JFrame {
                 confirmaraparelhoActionPerformed(evt);
             }
         });
-        jPanel1.add(confirmaraparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 277, 108, -1));
+        jPanel1.add(confirmaraparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(648, 510, 140, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("TIPO DE APARELHO: ");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 79, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         tipoaparelho.setBackground(new java.awt.Color(102, 0, 102));
-        tipoaparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        tipoaparelho.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         tipoaparelho.setForeground(new java.awt.Color(255, 255, 255));
         tipoaparelho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "VIDEO GAME", "COMPUTADOR", "SIMULADOR" }));
-        jPanel1.add(tipoaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 74, 130, -1));
+        jPanel1.add(tipoaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 150, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("NOME DO APARELHO:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 111, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         nomeaparelho.setBackground(new java.awt.Color(102, 0, 102));
-        nomeaparelho.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        nomeaparelho.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         nomeaparelho.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(nomeaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(144, 106, 193, -1));
+        jPanel1.add(nomeaparelho, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 380, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 0, 480, 330));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 0, 870, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
