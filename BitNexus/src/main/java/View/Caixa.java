@@ -28,7 +28,6 @@ public class Caixa extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        guiasPagamentos = new javax.swing.JTabbedPane();
         painelCaixa = new javax.swing.JPanel();
         labelCaixa = new javax.swing.JLabel();
         rotuloDoCliente = new javax.swing.JLabel();
@@ -38,43 +37,71 @@ public class Caixa extends javax.swing.JFrame {
         formaDoPagamento = new javax.swing.JLabel();
         mesaDeMaquinas = new javax.swing.JScrollPane();
         tabelaDasMaquinas = new javax.swing.JTable();
-        imagem = new javax.swing.JLabel();
         tipoDeServicos = new javax.swing.JLabel();
         selecionarTipoDeServico = new javax.swing.JComboBox<>();
         pagamento = new javax.swing.JComboBox<>();
         valor = new javax.swing.JLabel();
         pagamemtoDoServico = new javax.swing.JComboBox<>();
         botaoLigar = new javax.swing.JToggleButton();
-        leiboDeImagemDeFundor = new javax.swing.JLabel();
-        painelRelatorio = new javax.swing.JPanel();
+        botaoRelatorio = new javax.swing.JButton();
+        imagemPanel = new javax.swing.JLabel();
+        menu = new javax.swing.JMenuBar();
+        botaoHome = new javax.swing.JMenu();
+        botaoCliente = new javax.swing.JMenu();
+        botaoFuncionario = new javax.swing.JMenu();
+        botaoPlanos = new javax.swing.JMenu();
+        botaoMaquinas = new javax.swing.JMenu();
+        botaoCaixa = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Controle Financeiro");
 
         painelCaixa.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelCaixa.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        labelCaixa.setText("Caixa");
-        painelCaixa.add(labelCaixa, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 6, 50, -1));
+        labelCaixa.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        labelCaixa.setForeground(new java.awt.Color(255, 255, 255));
+        labelCaixa.setText("CAIXA");
+        painelCaixa.add(labelCaixa, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 100, -1));
 
-        rotuloDoCliente.setText("Nome Cliente:");
-        painelCaixa.add(rotuloDoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 53, -1, -1));
-        painelCaixa.add(nomeCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 356, -1));
+        rotuloDoCliente.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        rotuloDoCliente.setForeground(new java.awt.Color(255, 255, 255));
+        rotuloDoCliente.setText("NOME DO CLIENTE: ");
+        painelCaixa.add(rotuloDoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 160, 30));
 
+        nomeCliente.setBackground(new java.awt.Color(102, 0, 102));
+        nomeCliente.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        nomeCliente.setForeground(new java.awt.Color(255, 255, 255));
+        nomeCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomeClienteActionPerformed(evt);
+            }
+        });
+        painelCaixa.add(nomeCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 430, 30));
+
+        seleconarMaquina.setBackground(new java.awt.Color(102, 0, 102));
+        seleconarMaquina.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        seleconarMaquina.setForeground(new java.awt.Color(255, 255, 255));
         seleconarMaquina.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Play 1", "Play 2", "Play 3", "PC 1", "PC 2", "PC 3", "Simulador 1", "Simulador 2", "Simulador 3" }));
         seleconarMaquina.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 seleconarMaquinaActionPerformed(evt);
             }
         });
-        painelCaixa.add(seleconarMaquina, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 118, -1, -1));
+        painelCaixa.add(seleconarMaquina, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 200, 30));
 
-        maquinas.setText("Maquina:");
-        painelCaixa.add(maquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 124, 64, -1));
+        maquinas.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        maquinas.setForeground(new java.awt.Color(255, 255, 255));
+        maquinas.setText("MÁQUINA: ");
+        painelCaixa.add(maquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 100, -1));
 
-        formaDoPagamento.setText("Forma de Pagamento");
-        painelCaixa.add(formaDoPagamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 201, -1, -1));
+        formaDoPagamento.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        formaDoPagamento.setForeground(new java.awt.Color(255, 255, 255));
+        formaDoPagamento.setText("FORMA DE PAGAMENTO: ");
+        painelCaixa.add(formaDoPagamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 200, 30));
 
+        tabelaDasMaquinas.setBackground(new java.awt.Color(102, 0, 102));
+        tabelaDasMaquinas.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        tabelaDasMaquinas.setForeground(new java.awt.Color(255, 255, 255));
         tabelaDasMaquinas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -88,69 +115,99 @@ public class Caixa extends javax.swing.JFrame {
         ));
         mesaDeMaquinas.setViewportView(tabelaDasMaquinas);
 
-        painelCaixa.add(mesaDeMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 350, 343));
+        painelCaixa.add(mesaDeMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 330, 310));
 
-        imagem.setBackground(new java.awt.Color(0, 0, 0));
-        imagem.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Blusa Neon (1).jpg")); // NOI18N
-        painelCaixa.add(imagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 248));
+        tipoDeServicos.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        tipoDeServicos.setForeground(new java.awt.Color(255, 255, 255));
+        tipoDeServicos.setText("TIPO DE SERVIÇO:");
+        painelCaixa.add(tipoDeServicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 170, 40));
 
-        tipoDeServicos.setText("Tipo de Serviço");
-        painelCaixa.add(tipoDeServicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 81, 85, -1));
-
+        selecionarTipoDeServico.setBackground(new java.awt.Color(102, 0, 102));
+        selecionarTipoDeServico.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        selecionarTipoDeServico.setForeground(new java.awt.Color(255, 255, 255));
         selecionarTipoDeServico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cliente", "Bonificação", "Plano\t\t\t", "Teste" }));
-        painelCaixa.add(selecionarTipoDeServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 78, 98, -1));
+        selecionarTipoDeServico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selecionarTipoDeServicoActionPerformed(evt);
+            }
+        });
+        painelCaixa.add(selecionarTipoDeServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 140, 30));
 
+        pagamento.setBackground(new java.awt.Color(102, 0, 102));
+        pagamento.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        pagamento.setForeground(new java.awt.Color(255, 255, 255));
         pagamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pix", "Cartão", "Dinheiro" }));
-        painelCaixa.add(pagamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 198, 106, -1));
+        painelCaixa.add(pagamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 106, 30));
 
-        valor.setText("Valor");
-        painelCaixa.add(valor, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 161, 40, -1));
+        valor.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        valor.setForeground(new java.awt.Color(255, 255, 255));
+        valor.setText("VALOR: ");
+        painelCaixa.add(valor, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 60, -1));
 
+        pagamemtoDoServico.setBackground(new java.awt.Color(102, 0, 102));
+        pagamemtoDoServico.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        pagamemtoDoServico.setForeground(new java.awt.Color(255, 255, 255));
         pagamemtoDoServico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "20 minutos - R$ 20,00", "30 minutos - R$ 40,00", "60 minutos - R$ 60,00", "Plano Amador- R$ 120,00", "Plano Profissional - R$  250,00", "Plano Lendário  - R$ 550,00" }));
         pagamemtoDoServico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pagamemtoDoServicoActionPerformed(evt);
             }
         });
-        painelCaixa.add(pagamemtoDoServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, -1, -1));
+        painelCaixa.add(pagamemtoDoServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 230, 30));
 
-        botaoLigar.setText("Ligar Maquinar");
+        botaoLigar.setBackground(new java.awt.Color(102, 0, 102));
+        botaoLigar.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        botaoLigar.setForeground(new java.awt.Color(255, 255, 255));
+        botaoLigar.setText("LIGAR MÁQUINA");
         botaoLigar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoLigarActionPerformed(evt);
             }
         });
-        painelCaixa.add(botaoLigar, new org.netbeans.lib.awtextra.AbsoluteConstraints(684, 371, -1, -1));
+        painelCaixa.add(botaoLigar, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 660, -1, -1));
 
-        leiboDeImagemDeFundor.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
-        painelCaixa.add(leiboDeImagemDeFundor, new org.netbeans.lib.awtextra.AbsoluteConstraints(-430, -130, 1370, 770));
+        botaoRelatorio.setBackground(new java.awt.Color(102, 0, 102));
+        botaoRelatorio.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        botaoRelatorio.setText("GERA RELATÓRIO");
+        painelCaixa.add(botaoRelatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 660, -1, 30));
 
-        guiasPagamentos.addTab("Caixa", painelCaixa);
+        imagemPanel.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (2).png")); // NOI18N
+        painelCaixa.add(imagemPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -60, 1130, 760));
 
-        javax.swing.GroupLayout painelRelatorioLayout = new javax.swing.GroupLayout(painelRelatorio);
-        painelRelatorio.setLayout(painelRelatorioLayout);
-        painelRelatorioLayout.setHorizontalGroup(
-            painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 940, Short.MAX_VALUE)
-        );
-        painelRelatorioLayout.setVerticalGroup(
-            painelRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 640, Short.MAX_VALUE)
-        );
+        botaoHome.setText("HOME");
+        menu.add(botaoHome);
 
-        guiasPagamentos.addTab("Relatorio", painelRelatorio);
+        botaoCliente.setText("CLIENTE");
+        menu.add(botaoCliente);
+
+        botaoFuncionario.setText("FUNCIONÁRIO");
+        menu.add(botaoFuncionario);
+
+        botaoPlanos.setText("PLANOS");
+        menu.add(botaoPlanos);
+
+        botaoMaquinas.setText("MÁQUINAS");
+        menu.add(botaoMaquinas);
+
+        botaoCaixa.setText("CAIXA");
+        menu.add(botaoCaixa);
+
+        setJMenuBar(menu);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(guiasPagamentos))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(painelCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(guiasPagamentos)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(painelCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -184,6 +241,14 @@ public class Caixa extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_botaoLigarActionPerformed
+
+    private void selecionarTipoDeServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecionarTipoDeServicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_selecionarTipoDeServicoActionPerformed
+
+    private void nomeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomeClienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -224,19 +289,24 @@ public class Caixa extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu botaoCaixa;
+    private javax.swing.JMenu botaoCliente;
+    private javax.swing.JMenu botaoFuncionario;
+    private javax.swing.JMenu botaoHome;
     private javax.swing.JToggleButton botaoLigar;
+    private javax.swing.JMenu botaoMaquinas;
+    private javax.swing.JMenu botaoPlanos;
+    private javax.swing.JButton botaoRelatorio;
     private javax.swing.JLabel formaDoPagamento;
-    private javax.swing.JTabbedPane guiasPagamentos;
-    private javax.swing.JLabel imagem;
+    private javax.swing.JLabel imagemPanel;
     private javax.swing.JLabel labelCaixa;
-    private javax.swing.JLabel leiboDeImagemDeFundor;
     private javax.swing.JLabel maquinas;
+    private javax.swing.JMenuBar menu;
     private javax.swing.JScrollPane mesaDeMaquinas;
     private javax.swing.JTextField nomeCliente;
     private javax.swing.JComboBox<String> pagamemtoDoServico;
     private javax.swing.JComboBox<String> pagamento;
     private javax.swing.JPanel painelCaixa;
-    private javax.swing.JPanel painelRelatorio;
     private javax.swing.JLabel rotuloDoCliente;
     private javax.swing.JComboBox<String> selecionarTipoDeServico;
     private javax.swing.JComboBox<String> seleconarMaquina;

@@ -202,7 +202,7 @@
         <Component class="javax.swing.JLabel" name="cadastro">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Downloads\Cadastro (1).png"/>
+              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\NewBitNexus\BitNexus\src\main\java\img\Cadastro (2).png"/>
             </Property>
           </Properties>
           <Constraints>

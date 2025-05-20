@@ -117,7 +117,7 @@ public class telaCadastro extends javax.swing.JFrame {
         });
         painelCadastro1.add(butonDeCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, 100, 40));
 
-        cadastro.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (1).png")); // NOI18N
+        cadastro.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Documents\\NetBeansProjects\\NewBitNexus\\BitNexus\\src\\main\\java\\img\\Cadastro (2).png")); // NOI18N
         painelCadastro1.add(cadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, 0, 1040, 710));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
