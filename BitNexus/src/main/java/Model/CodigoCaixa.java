@@ -16,16 +16,23 @@ public class CodigoCaixa {
     private String pagamemtoDoServico;
     private String formaDePagar;
     private String ligarMarquinar;
+   ;
 
-    public CodigoCaixa(String nomeDoCliente, String seleciaServico, String nomeMaquina, String pagamemtoDoServico, String formaDePagar) {
+    public CodigoCaixa(String nomeDoCliente, String seleciaServico, String nomeMaquina, String pagamemtoDoServico, String formaDePagar,String butãoVoltar) {
         this.nomeDoCliente = nomeDoCliente;
         this.seleciaServico = seleciaServico;
         this.nomeMaquina = nomeMaquina;
         this.pagamemtoDoServico = pagamemtoDoServico;
         this.formaDePagar = formaDePagar;
     }
+
+    public CodigoCaixa() {
+    }
      
      // metodos getter e setter
+ //metodo com retorno do tipo String
+    //metodo com retorno do tipo String
+    // metodo com parametro e sem retorno
 
     public String getNomeDoCliente() {
         return nomeDoCliente;
@@ -34,11 +41,11 @@ public class CodigoCaixa {
     public void setNomeDoCliente(String nomeDoCliente) {
         this.nomeDoCliente = nomeDoCliente;
     }
-    // metodo com retorno do tipo String
+
     public String getSeleciaServico() {
         return seleciaServico;
     }
-    // metodo com parametro e sem retorno
+
     public void setSeleciaServico(String seleciaServico) {
         this.seleciaServico = seleciaServico;
     }
@@ -74,6 +81,11 @@ public class CodigoCaixa {
     public void setLigarMarquinar(String ligarMarquinar) {
         this.ligarMarquinar = ligarMarquinar;
     }
+
+   
+
+       
+   
     
     
     
