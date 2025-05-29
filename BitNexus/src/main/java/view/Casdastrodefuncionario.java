@@ -249,21 +249,6 @@ public class Casdastrodefuncionario extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         // criar um funconario da classe
-        CadastroDeFuncionarioModel funcionario = new CadastroDeFuncionarioModel();
-        // cadastrar os dados dentro da classe funcionário
-        funcionario.setNomecompleto(nomecompleto.getText());
-        funcionario.setDatadenacimento(datadenacimento.getText());
-        funcionario.setFone(fone.getText());
-       
-        //captutar dados da combobox
-        funcionario.setOpcao((String)opcao.getSelectedItem());
-        
-        // capturar dados ao campo password fienld
-        funcionario.setSenha((String)senhadigitada.getPassword().toString());
-        
-        //capturar os dados dos campos formatados
-        funcionario.setCpf(cpfdigitando.getText());
-        funcionario.setDatadenacimento(data.getText());
         
         
     }//GEN-LAST:event_entreActionPerformed

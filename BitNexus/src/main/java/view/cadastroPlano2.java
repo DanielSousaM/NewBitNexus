@@ -4,7 +4,6 @@
  */
 package view;
 
-import Model.cadastrodeplano;
 
 /**
  *
@@ -200,12 +199,6 @@ public class cadastroPlano2 extends javax.swing.JFrame {
 
     private void salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarActionPerformed
         // TODO add your handling code here:
-        cadastrodeplano cadastro = new cadastrodeplano();
-        cadastro.setNomeplano(nomeparaplano.getText());
-        cadastro.setDriscricaodoplano(plano.getText());
-        cadastro.setValormensal(preco.getText());
-        cadastro.setTaxaadesao(taxa.getText());
-        cadastro.setStatusplano((String)ativodesetivo.getSelectedItem());
     }//GEN-LAST:event_salvarActionPerformed
 
     private void ativodesetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ativodesetivoActionPerformed

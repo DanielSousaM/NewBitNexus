@@ -15,95 +15,82 @@ public class CadastroDeFuncionarioModel {
    // logico -> boolean
    // datas -> Date
    
-    private String nomecompleto;
-    private String datadenacimento;
-    private String cpf;
-    private String fone;
-    private String email;
-    private String senha;
-    private String opcao;
-            
-    public CadastroDeFuncionarioModel(String nomecompleto, String datadenacimento, String cpf, String fone, String email, String senha,String opcao) {
-        this.nomecompleto = nomecompleto;
-        this.datadenacimento = datadenacimento;
-        this.cpf = cpf;
-        this.fone = fone;
-        this.email = email;
-        this.senha = senha;
-        this.opcao = opcao;
+    private int idFUNCIONARIO;
+    private String nomeFuncionario;
+    private String datadenacimentoFuncionario;
+    private String cpfFuncionario;
+    private String telefoneFuncionario;
+    private String emailFuncionario;
+    private String senhaFuncionario;
+
+    public CadastroDeFuncionarioModel(int idFUNCIONARIO, String nomeFuncionario, String datadenacimentoFuncionario, String cpfFuncionario, String telefoneFuncionario, String emailFuncionario, String senhaFuncionario) {
+        this.idFUNCIONARIO = idFUNCIONARIO;
+        this.nomeFuncionario = nomeFuncionario;
+        this.datadenacimentoFuncionario = datadenacimentoFuncionario;
+        this.cpfFuncionario = cpfFuncionario;
+        this.telefoneFuncionario = telefoneFuncionario;
+        this.emailFuncionario = emailFuncionario;
+        this.senhaFuncionario = senhaFuncionario;
     }
 
-    public CadastroDeFuncionarioModel() {
-    }
-    
-    
-    
-       // metados getter e setter
-
-       //gertter serve para visualizar os dados
-
-    public String getNomecompleto() {
-        return nomecompleto;
+    public int getIdFUNCIONARIO() {
+        return idFUNCIONARIO;
     }
 
-    public void setNomecompleto(String nomecompleto) {
-        this.nomecompleto = nomecompleto;
+    public void setIdFUNCIONARIO(int idFUNCIONARIO) {
+        this.idFUNCIONARIO = idFUNCIONARIO;
     }
 
-    public String getDatadenacimento() {
-        return datadenacimento;
+    public String getNomeFuncionario() {
+        return nomeFuncionario;
     }
 
-    public void setDatadenacimento(String datadenacimento) {
-        this.datadenacimento = datadenacimento;
+    public void setNomeFuncionario(String nomeFuncionario) {
+        this.nomeFuncionario = nomeFuncionario;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getDatadenacimentoFuncionario() {
+        return datadenacimentoFuncionario;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setDatadenacimentoFuncionario(String datadenacimentoFuncionario) {
+        this.datadenacimentoFuncionario = datadenacimentoFuncionario;
     }
 
-    public String getFone() {
-        return fone;
+    public String getCpfFuncionario() {
+        return cpfFuncionario;
     }
 
-    public void setFone(String fone) {
-        this.fone = fone;
+    public void setCpfFuncionario(String cpfFuncionario) {
+        this.cpfFuncionario = cpfFuncionario;
     }
 
-    public String getEmail() {
-        return email;
+    public String getTelefoneFuncionario() {
+        return telefoneFuncionario;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTelefoneFuncionario(String telefoneFuncionario) {
+        this.telefoneFuncionario = telefoneFuncionario;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getEmailFuncionario() {
+        return emailFuncionario;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setEmailFuncionario(String emailFuncionario) {
+        this.emailFuncionario = emailFuncionario;
     }
 
-    public String getOpcao() {
-        return opcao;
+    public String getSenhaFuncionario() {
+        return senhaFuncionario;
     }
 
-    public void setOpcao(String opcao) {
-        this.opcao = opcao;
+    public void setSenhaFuncionario(String senhaFuncionario) {
+        this.senhaFuncionario = senhaFuncionario;
     }
+
    
-    
-       
 
     
    
-   
-    
-     
 } // chve da class
