@@ -9,73 +9,76 @@ package Model;
  * @author ALUNO
  */
 public class ClienteModel {
-   private String nome;
-   private String email;
-   private String cpf;
-   private String telefone;
-   private String endereco;
-   private String senha;
+   private String nomeCliente;
+   private String emailCliente;
+   private String cpfCliente;
+   private String telefoneCliente;
+   private String enderecoCliente;
+   private String senhaCliente;
 
-    public ClienteModel(String nome, String email, String cpf, String telefone, String endereço, String senha) {
-        this.nome = nome;
-        this.email = email;
-        this.cpf = cpf;
-        this.telefone = telefone;
-        this.endereco = endereço;
-        this.senha = senha;
+    public ClienteModel(String nomeCliente, String emailCliente, String cpfCliente, String telefoneCliente, String enderecoCliente, String senhaCliente) {
+        this.nomeCliente = nomeCliente;
+        this.emailCliente = emailCliente;
+        this.cpfCliente = cpfCliente;
+        this.telefoneCliente = telefoneCliente;
+        this.enderecoCliente = enderecoCliente;
+        this.senhaCliente = senhaCliente;
     }
+
+    
 
     public ClienteModel() {
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCliente() {
+        return nomeCliente;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailCliente() {
+        return emailCliente;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailCliente(String emailCliente) {
+        this.emailCliente = emailCliente;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getCpfCliente() {
+        return cpfCliente;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setCpfCliente(String cpfCliente) {
+        this.cpfCliente = cpfCliente;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getTelefoneCliente() {
+        return telefoneCliente;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setTelefoneCliente(String telefoneCliente) {
+        this.telefoneCliente = telefoneCliente;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getEnderecoCliente() {
+        return enderecoCliente;
     }
 
-    public void setEndereco(String endereço) {
-        this.endereco = endereço;
+    public void setEnderecoCliente(String enderecoCliente) {
+        this.enderecoCliente = enderecoCliente;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getSenhaCliente() {
+        return senhaCliente;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setSenhaCliente(String senhaCliente) {
+        this.senhaCliente = senhaCliente;
     }
-   
+
+    
    
    
    

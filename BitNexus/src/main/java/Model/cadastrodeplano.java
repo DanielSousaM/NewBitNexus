@@ -9,62 +9,80 @@ package Model;
  * @author ALUNO
  */
 public class cadastrodeplano {
-    private String nomeplano;
-    private String driscricaodoplano;
-    private String valormensal;
-    private String taxaadesao;
-    private String statusplano;
+    private int idPLANOS;
+    private String nomePlano;
+    private String driscricaoplano;
+    private String valorPlano;
+    private String taxaPlano;
+    private String statusPlano;
 
-    public cadastrodeplano(String nomeplano, String driscricaodoplano, String valormensal, String taxaadesao, String statusplano) {
-        this.nomeplano = nomeplano;
-        this.driscricaodoplano = driscricaodoplano;
-        this.valormensal = valormensal;
-        this.taxaadesao = taxaadesao;
-        this.statusplano = statusplano;
+    public cadastrodeplano(int idPLANOS, String nomePlano, String driscricaoplano, String valorPlano, String taxaPlano, String statusPlano) {
+        this.idPLANOS = idPLANOS;
+        this.nomePlano = nomePlano;
+        this.driscricaoplano = driscricaoplano;
+        this.valorPlano = valorPlano;
+        this.taxaPlano = taxaPlano;
+        this.statusPlano = statusPlano;
     }
+
+    
+
+    
     public cadastrodeplano(){
         
     }
 
-    public String getNomeplano() {
-        return nomeplano;
+    public int getIdPLANOS() {
+        return idPLANOS;
     }
 
-    public void setNomeplano(String nomeplano) {
-        this.nomeplano = nomeplano;
+    public void setIdPLANOS(int idPLANOS) {
+        this.idPLANOS = idPLANOS;
     }
 
-    public String getDriscricaodoplano() {
-        return driscricaodoplano;
+    public String getNomePlano() {
+        return nomePlano;
     }
 
-    public void setDriscricaodoplano(String driscricaodoplano) {
-        this.driscricaodoplano = driscricaodoplano;
+    public void setNomePlano(String nomePlano) {
+        this.nomePlano = nomePlano;
     }
 
-    public String getValormensal() {
-        return valormensal;
+    public String getDriscricaoplano() {
+        return driscricaoplano;
     }
 
-    public void setValormensal(String valormensal) {
-        this.valormensal = valormensal;
+    public void setDriscricaoplano(String driscricaoplano) {
+        this.driscricaoplano = driscricaoplano;
     }
 
-    public String getTaxaadesao() {
-        return taxaadesao;
+    public String getValorPlano() {
+        return valorPlano;
     }
 
-    public void setTaxaadesao(String taxaadesao) {
-        this.taxaadesao = taxaadesao;
+    public void setValorPlano(String valorPlano) {
+        this.valorPlano = valorPlano;
     }
 
-    public String getStatusplano() {
-        return statusplano;
+    public String getTaxaPlano() {
+        return taxaPlano;
     }
 
-    public void setStatusplano(String statusplano) {
-        this.statusplano = statusplano;
+    public void setTaxaPlano(String taxaPlano) {
+        this.taxaPlano = taxaPlano;
     }
+
+    public String getStatusPlano() {
+        return statusPlano;
+    }
+
+    public void setStatusPlano(String statusPlano) {
+        this.statusPlano = statusPlano;
+    }
+
+    
+
+    
     
     
             

@@ -420,9 +420,7 @@ public class TelaMonitoramento extends javax.swing.JFrame {
 
     private void novoaparelhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novoaparelhoActionPerformed
         // TODO add your handling code here:
-        TelaNovoAparelho telanovoaparelho = new TelaNovoAparelho();
-        telanovoaparelho.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_novoaparelhoActionPerformed
 
     /**
