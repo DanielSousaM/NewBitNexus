@@ -35,90 +35,156 @@ public class telaCadastro extends javax.swing.JFrame {
         senha = new javax.swing.JLabel();
         campoEndereço = new javax.swing.JTextField();
         campoTelefone = new javax.swing.JTextField();
-        campoCpf1 = new javax.swing.JTextField();
         campoEmail = new javax.swing.JTextField();
         nomeCompletocampo = new javax.swing.JTextField();
-        campoSenha = new javax.swing.JPasswordField();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
         butonDeCadastro = new javax.swing.JButton();
+        tenhoConta = new javax.swing.JLabel();
+        fotmatoSenhaCadastro = new javax.swing.JFormattedTextField();
+        campoCpf1 = new javax.swing.JFormattedTextField();
         cadastro = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        butonHome = new javax.swing.JMenu();
+        butonCliente = new javax.swing.JMenu();
+        butonFuncionarios = new javax.swing.JMenu();
+        butonPlanos = new javax.swing.JMenu();
+        butonMaquinas = new javax.swing.JMenu();
+        butonCaixa = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         painelCadastro1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        nomeCompleto.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        nomeCompleto.setText("Nome Completo:");
-        painelCadastro1.add(nomeCompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 180, -1));
+        nomeCompleto.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        nomeCompleto.setForeground(new java.awt.Color(255, 255, 255));
+        nomeCompleto.setText("NOME COMPLETO:");
+        painelCadastro1.add(nomeCompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 150, -1));
 
-        email.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        email.setText("E-mail:");
-        painelCadastro1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, -1, -1));
+        email.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        email.setForeground(new java.awt.Color(255, 255, 255));
+        email.setText("E-MAIL:");
+        painelCadastro1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, -1, -1));
 
-        campoCpf.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        campoCpf.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        campoCpf.setForeground(new java.awt.Color(255, 255, 255));
         campoCpf.setText("CPF:");
-        painelCadastro1.add(campoCpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, -1, -1));
+        painelCadastro1.add(campoCpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, -1, -1));
 
-        telefone.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        telefone.setText("Telefone:");
-        painelCadastro1.add(telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, -1, -1));
+        telefone.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        telefone.setForeground(new java.awt.Color(255, 255, 255));
+        telefone.setText("TELEFONE:");
+        painelCadastro1.add(telefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, -1, -1));
 
-        endereço.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        endereço.setText("Endereço:");
-        painelCadastro1.add(endereço, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, -1, -1));
+        endereço.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        endereço.setForeground(new java.awt.Color(255, 255, 255));
+        endereço.setText("ENDEREÇO:");
+        painelCadastro1.add(endereço, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, -1, -1));
 
-        senha.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        senha.setText("Senha");
-        painelCadastro1.add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, -1, -1));
+        senha.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        senha.setForeground(new java.awt.Color(255, 255, 255));
+        senha.setText("SENHA:");
+        painelCadastro1.add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, -1, -1));
 
+        campoEndereço.setBackground(new java.awt.Color(102, 0, 102));
+        campoEndereço.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        campoEndereço.setForeground(new java.awt.Color(255, 255, 255));
         campoEndereço.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoEndereçoActionPerformed(evt);
             }
         });
-        painelCadastro1.add(campoEndereço, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 390, 340, 30));
+        painelCadastro1.add(campoEndereço, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 340, 30));
 
+        campoTelefone.setBackground(new java.awt.Color(102, 0, 102));
+        campoTelefone.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        campoTelefone.setForeground(new java.awt.Color(255, 255, 255));
         campoTelefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoTelefoneActionPerformed(evt);
             }
         });
-        painelCadastro1.add(campoTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 340, -1));
-        painelCadastro1.add(campoCpf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 340, -1));
+        painelCadastro1.add(campoTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 340, -1));
 
+        campoEmail.setBackground(new java.awt.Color(102, 0, 102));
+        campoEmail.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        campoEmail.setForeground(new java.awt.Color(255, 255, 255));
         campoEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoEmailActionPerformed(evt);
             }
         });
-        painelCadastro1.add(campoEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 340, -1));
-        painelCadastro1.add(nomeCompletocampo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 340, -1));
+        painelCadastro1.add(campoEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 340, -1));
 
-        campoSenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoSenhaActionPerformed(evt);
-            }
-        });
-        painelCadastro1.add(campoSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, 340, -1));
+        nomeCompletocampo.setBackground(new java.awt.Color(102, 0, 102));
+        nomeCompletocampo.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        nomeCompletocampo.setForeground(new java.awt.Color(255, 255, 255));
+        painelCadastro1.add(nomeCompletocampo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 340, -1));
 
-        try {
-            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        painelCadastro1.add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, 340, -1));
-
+        butonDeCadastro.setBackground(new java.awt.Color(102, 102, 102));
         butonDeCadastro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        butonDeCadastro.setForeground(new java.awt.Color(255, 255, 255));
         butonDeCadastro.setText("Cadastra");
         butonDeCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 butonDeCadastroActionPerformed(evt);
             }
         });
-        painelCadastro1.add(butonDeCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, 100, 40));
+        painelCadastro1.add(butonDeCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 400, 100, 30));
+
+        tenhoConta.setFont(new java.awt.Font("Segoe UI", 2, 16)); // NOI18N
+        tenhoConta.setForeground(new java.awt.Color(255, 255, 255));
+        tenhoConta.setText("Já tenho uma conta");
+        tenhoConta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tenhoContaMouseClicked(evt);
+            }
+        });
+        painelCadastro1.add(tenhoConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, -1, -1));
+
+        fotmatoSenhaCadastro.setBackground(new java.awt.Color(102, 0, 102));
+        fotmatoSenhaCadastro.setForeground(new java.awt.Color(255, 255, 255));
+        try {
+            fotmatoSenhaCadastro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###-###")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        painelCadastro1.add(fotmatoSenhaCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 340, -1));
+
+        campoCpf1.setBackground(new java.awt.Color(102, 0, 102));
+        campoCpf1.setForeground(new java.awt.Color(255, 255, 255));
+        try {
+            campoCpf1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        painelCadastro1.add(campoCpf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 340, 30));
 
         cadastro.setIcon(new javax.swing.ImageIcon("C:\\Users\\ALUNO\\Downloads\\Cadastro (1).png")); // NOI18N
-        painelCadastro1.add(cadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, 0, 1040, 710));
+        painelCadastro1.add(cadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, 0, 1040, 680));
+
+        butonHome.setText("HOME");
+        jMenuBar1.add(butonHome);
+
+        butonCliente.setText("CLIENTE");
+        jMenuBar1.add(butonCliente);
+
+        butonFuncionarios.setText("FUNCIONÁRIO");
+        jMenuBar1.add(butonFuncionarios);
+
+        butonPlanos.setText("PLANOS");
+        jMenuBar1.add(butonPlanos);
+
+        butonMaquinas.setText("MÁQUINAS");
+        jMenuBar1.add(butonMaquinas);
+
+        butonCaixa.setText("CAIXA");
+        butonCaixa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                butonCaixaMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(butonCaixa);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,13 +212,23 @@ public class telaCadastro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_campoEmailActionPerformed
 
-    private void campoSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoSenhaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campoSenhaActionPerformed
-
     private void butonDeCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butonDeCadastroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_butonDeCadastroActionPerformed
+
+    private void tenhoContaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tenhoContaMouseClicked
+        // TODO add your handling code here:
+        LoginView loginds= new LoginView();
+        loginds.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_tenhoContaMouseClicked
+
+    private void butonCaixaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_butonCaixaMouseClicked
+        // TODO add your handling code here:
+        Caixa caixamoney= new Caixa();
+        caixamoney.setVisible(true);
+        
+    }//GEN-LAST:event_butonCaixaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -190,21 +266,28 @@ public class telaCadastro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu butonCaixa;
+    private javax.swing.JMenu butonCliente;
     private javax.swing.JButton butonDeCadastro;
+    private javax.swing.JMenu butonFuncionarios;
+    private javax.swing.JMenu butonHome;
+    private javax.swing.JMenu butonMaquinas;
+    private javax.swing.JMenu butonPlanos;
     private javax.swing.JLabel cadastro;
     private javax.swing.JLabel campoCpf;
-    private javax.swing.JTextField campoCpf1;
+    private javax.swing.JFormattedTextField campoCpf1;
     private javax.swing.JTextField campoEmail;
     private javax.swing.JTextField campoEndereço;
-    private javax.swing.JPasswordField campoSenha;
     private javax.swing.JTextField campoTelefone;
     private javax.swing.JLabel email;
     private javax.swing.JLabel endereço;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JFormattedTextField fotmatoSenhaCadastro;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JLabel nomeCompleto;
     private javax.swing.JTextField nomeCompletocampo;
     private javax.swing.JPanel painelCadastro1;
     private javax.swing.JLabel senha;
     private javax.swing.JLabel telefone;
+    private javax.swing.JLabel tenhoConta;
     // End of variables declaration//GEN-END:variables
 }

@@ -24,7 +24,12 @@ public class CodigoCaixa {
         this.pagamemtoDoServico = pagamemtoDoServico;
         this.formaDePagar = formaDePagar;
     }
+
+    public CodigoCaixa() {
+    }
      
+    
+    
      // metodos getter e setter
 
     public String getNomeDoCliente() {
