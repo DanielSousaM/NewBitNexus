@@ -14,16 +14,17 @@ public class MonitoramentoModel {
 // real - float ou double
 // logico - boolean 
 // datas - Dates
-private String maquina, datainicial, datafinal, horainicial, horafinal, status;
+    private int idMAQUINAS;
+private String nomeMaquina, tipoMaquina;
 
-    public MonitoramentoModel(String maquina, String datainicial, String datafinal, String horainicial, String horafinal, String status) {
-        this.maquina = maquina;
-        this.datainicial = datainicial;
-        this.datafinal = datafinal;
-        this.horainicial = horainicial;
-        this.horafinal = horafinal;
-        this.status = status;
+    public MonitoramentoModel(int idMAQUINAS, String nomeMaquina, String tipoMaquina) {
+        this.idMAQUINAS = idMAQUINAS;
+        this.nomeMaquina = nomeMaquina;
+        this.tipoMaquina = tipoMaquina;
     }
+
+   
+
      public MonitoramentoModel() {
          
      }  
@@ -31,52 +32,32 @@ private String maquina, datainicial, datafinal, horainicial, horafinal, status;
      // getter serve para visualizar dados
      // setter serve para inserir dados
 
-    public String getMaquina() {
-        return maquina;
+    public int getIdMAQUINAS() {
+        return idMAQUINAS;
     }
 
-    public void setMaquina(String maquina) {
-        this.maquina = maquina;
+    public void setIdMAQUINAS(int idMAQUINAS) {
+        this.idMAQUINAS = idMAQUINAS;
     }
 
-    public String getDatainicial() {
-        return datainicial;
+    public String getNomeMaquina() {
+        return nomeMaquina;
     }
 
-    public void setDatainicial(String datainicial) {
-        this.datainicial = datainicial;
+    public void setNomeMaquina(String nomeMaquina) {
+        this.nomeMaquina = nomeMaquina;
     }
 
-    public String getDatafinal() {
-        return datafinal;
+    public String getTipoMaquina() {
+        return tipoMaquina;
     }
 
-    public void setDatafinal(String datafinal) {
-        this.datafinal = datafinal;
+    public void setTipoMaquina(String tipoMaquina) {
+        this.tipoMaquina = tipoMaquina;
     }
 
-    public String getHorainicial() {
-        return horainicial;
-    }
+    
 
-    public void setHorainicial(String horainicial) {
-        this.horainicial = horainicial;
-    }
-
-    public String getHorafinal() {
-        return horafinal;
-    }
-
-    public void setHorafinal(String horafinal) {
-        this.horafinal = horafinal;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
+    
      
 }

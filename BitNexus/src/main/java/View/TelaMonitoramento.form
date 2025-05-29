@@ -80,11 +80,6 @@
         <Component class="javax.swing.JLabel" name="jLabel13">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\computer.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -143,11 +138,6 @@
         <Component class="javax.swing.JLabel" name="jLabel20">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\controller.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -206,11 +196,6 @@
         <Component class="javax.swing.JLabel" name="jLabel21">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\controller.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -269,11 +254,6 @@
         <Component class="javax.swing.JLabel" name="jLabel19">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\controller.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -332,11 +312,6 @@
         <Component class="javax.swing.JLabel" name="jLabel15">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\computer.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -395,11 +370,6 @@
         <Component class="javax.swing.JLabel" name="jLabel16">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\joystick.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -458,11 +428,6 @@
         <Component class="javax.swing.JLabel" name="jLabel17">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\joystick.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -521,11 +486,6 @@
         <Component class="javax.swing.JLabel" name="jLabel18">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\joystick.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -584,11 +544,6 @@
         <Component class="javax.swing.JLabel" name="jLabel14">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\ALUNO\Documents\NetBeansProjects\Pacote de Icones\icons 1\computer.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>

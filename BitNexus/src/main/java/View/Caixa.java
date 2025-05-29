@@ -228,13 +228,9 @@ public class Caixa extends javax.swing.JFrame {
         CodigoCaixa codigoPagamento = new CodigoCaixa ();
         
        // cadastrar os dados dentro da classw CodigoCaixa
-        codigoPagamento.setNomeDoCliente(nomeCliente.getText());
+        
         
         // capturar dados da comboBox
-        codigoPagamento.setSeleciaServico((String)selecionarTipoDeServico.getSelectedItem());
-        codigoPagamento.setNomeMaquina((String)seleconarMaquina.getSelectedItem());
-        codigoPagamento.setFormaDePagar((String)pagamento.getSelectedItem());
-        codigoPagamento.setPagamemtoDoServico((String)pagamemtoDoServico.getSelectedItem());
         
         
         

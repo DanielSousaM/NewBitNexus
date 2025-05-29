@@ -10,20 +10,23 @@ package Model;
  */
 public class CodigoCaixa {
     
-    private String nomeDoCliente;
-    private String seleciaServico;
-    private String nomeMaquina;
-    private String pagamemtoDoServico;
-    private String formaDePagar;
-    private String ligarMarquinar;
+    private int idCAIXA;
+    private String tipoServico;
+    private String valor;
+    private String formadepagamento;
+    private String dataUso;
+    private String tempo;
 
-    public CodigoCaixa(String nomeDoCliente, String seleciaServico, String nomeMaquina, String pagamemtoDoServico, String formaDePagar) {
-        this.nomeDoCliente = nomeDoCliente;
-        this.seleciaServico = seleciaServico;
-        this.nomeMaquina = nomeMaquina;
-        this.pagamemtoDoServico = pagamemtoDoServico;
-        this.formaDePagar = formaDePagar;
+    public CodigoCaixa(int idCAIXA, String tipoServico, String valor, String formadepagamento, String dataUso, String tempo) {
+        this.idCAIXA = idCAIXA;
+        this.tipoServico = tipoServico;
+        this.valor = valor;
+        this.formadepagamento = formadepagamento;
+        this.dataUso = dataUso;
+        this.tempo = tempo;
     }
+
+    
 
     public CodigoCaixa() {
     }
@@ -32,53 +35,60 @@ public class CodigoCaixa {
     
      // metodos getter e setter
 
-    public String getNomeDoCliente() {
-        return nomeDoCliente;
-    }
-
-    public void setNomeDoCliente(String nomeDoCliente) {
-        this.nomeDoCliente = nomeDoCliente;
-    }
     // metodo com retorno do tipo String
-    public String getSeleciaServico() {
-        return seleciaServico;
-    }
+    
     // metodo com parametro e sem retorno
-    public void setSeleciaServico(String seleciaServico) {
-        this.seleciaServico = seleciaServico;
+
+    public int getIdCAIXA() {
+        return idCAIXA;
     }
 
-    public String getNomeMaquina() {
-        return nomeMaquina;
+    public void setIdCAIXA(int idCAIXA) {
+        this.idCAIXA = idCAIXA;
     }
 
-    public void setNomeMaquina(String nomeMaquina) {
-        this.nomeMaquina = nomeMaquina;
+    public String getTipoServico() {
+        return tipoServico;
     }
 
-    public String getPagamemtoDoServico() {
-        return pagamemtoDoServico;
+    public void setTipoServico(String tipoServico) {
+        this.tipoServico = tipoServico;
     }
 
-    public void setPagamemtoDoServico(String pagamemtoDoServico) {
-        this.pagamemtoDoServico = pagamemtoDoServico;
+    public String getValor() {
+        return valor;
     }
 
-    public String getFormaDePagar() {
-        return formaDePagar;
+    public void setValor(String valor) {
+        this.valor = valor;
     }
 
-    public void setFormaDePagar(String formaDePagar) {
-        this.formaDePagar = formaDePagar;
+    public String getFormadepagamento() {
+        return formadepagamento;
     }
 
-    public String getLigarMarquinar() {
-        return ligarMarquinar;
+    public void setFormadepagamento(String formadepagamento) {
+        this.formadepagamento = formadepagamento;
     }
 
-    public void setLigarMarquinar(String ligarMarquinar) {
-        this.ligarMarquinar = ligarMarquinar;
+    public String getDataUso() {
+        return dataUso;
     }
+
+    public void setDataUso(String dataUso) {
+        this.dataUso = dataUso;
+    }
+
+    public String getTempo() {
+        return tempo;
+    }
+
+    public void setTempo(String tempo) {
+        this.tempo = tempo;
+    }
+
+    
+    
     
     
     
