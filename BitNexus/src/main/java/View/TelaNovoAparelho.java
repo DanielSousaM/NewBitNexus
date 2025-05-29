@@ -4,8 +4,7 @@
  */
 package View;
 
-import Model.MonitoramentoModel;
-import Model.NovoAparelhoModel;
+
 
 /**
  *
@@ -109,9 +108,9 @@ public class TelaNovoAparelho extends javax.swing.JFrame {
 
     private void confirmaraparelhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmaraparelhoActionPerformed
         // TODO add your handling code here:
-        NovoAparelhoModel novoaparelho = new NovoAparelhoModel();
-        novoaparelho.setNomeaparelho(nomeaparelho.getText());
-        novoaparelho.setTipoaparelho((String)tipoaparelho.getSelectedItem());
+       
+     
+      
     }//GEN-LAST:event_confirmaraparelhoActionPerformed
 
     private void voltarnovoaparelhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarnovoaparelhoActionPerformed

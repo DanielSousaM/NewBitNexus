@@ -9,62 +9,64 @@ package Model;
  * @author ALUNO
  */
 public class cadastrodeplano {
-    private String nomeplano;
-    private String driscricaodoplano;
-    private String valormensal;
-    private String taxaadesao;
-    private String statusplano;
+    private int idPLANOS;
+    private String nomePlano;
+    private String descricaoPlano;
+    private String valorPlano;
+    private String taxaPlano;
+    private String statusPlano;
 
-    public cadastrodeplano(String nomeplano, String driscricaodoplano, String valormensal, String taxaadesao, String statusplano) {
-        this.nomeplano = nomeplano;
-        this.driscricaodoplano = driscricaodoplano;
-        this.valormensal = valormensal;
-        this.taxaadesao = taxaadesao;
-        this.statusplano = statusplano;
-    }
-    public cadastrodeplano(){
-        
+    public int getIdPLANOS() {
+        return idPLANOS;
     }
 
-    public String getNomeplano() {
-        return nomeplano;
+    public void setIdPLANOS(int idPLANOS) {
+        this.idPLANOS = idPLANOS;
     }
 
-    public void setNomeplano(String nomeplano) {
-        this.nomeplano = nomeplano;
+    public String getNomePlano() {
+        return nomePlano;
     }
 
-    public String getDriscricaodoplano() {
-        return driscricaodoplano;
+    public void setNomePlano(String nomePlano) {
+        this.nomePlano = nomePlano;
     }
 
-    public void setDriscricaodoplano(String driscricaodoplano) {
-        this.driscricaodoplano = driscricaodoplano;
+    public String getDescricaoPlano() {
+        return descricaoPlano;
     }
 
-    public String getValormensal() {
-        return valormensal;
+    public void setDescricaoPlano(String descricaoPlano) {
+        this.descricaoPlano = descricaoPlano;
     }
 
-    public void setValormensal(String valormensal) {
-        this.valormensal = valormensal;
+    public String getValorPlano() {
+        return valorPlano;
     }
 
-    public String getTaxaadesao() {
-        return taxaadesao;
+    public void setValorPlano(String valorPlano) {
+        this.valorPlano = valorPlano;
     }
 
-    public void setTaxaadesao(String taxaadesao) {
-        this.taxaadesao = taxaadesao;
+    public String getTaxaPlano() {
+        return taxaPlano;
     }
 
-    public String getStatusplano() {
-        return statusplano;
+    public void setTaxaPlano(String taxaPlano) {
+        this.taxaPlano = taxaPlano;
     }
 
-    public void setStatusplano(String statusplano) {
-        this.statusplano = statusplano;
+    public String getStatusPlano() {
+        return statusPlano;
     }
+
+    public void setStatusPlano(String statusPlano) {
+        this.statusPlano = statusPlano;
+    }
+
+  
+
+   
     
     
             

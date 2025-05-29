@@ -9,72 +9,88 @@ package Model;
  * @author ALUNO
  */
 public class ClienteModel {
-   private String nome;
-   private String email;
-   private String cpf;
-   private String telefone;
-   private String endereco;
-   private String senha;
+    private int idCLIENTES;
+   private String nomeCliente;
+   private String emailCliente;
+   private String cpfCliente;
+   private String telefoneCliente;
+   private String enderecoCliente;
+   private String senhaCliente;
 
-    public ClienteModel(String nome, String email, String cpf, String telefone, String endereço, String senha) {
-        this.nome = nome;
-        this.email = email;
-        this.cpf = cpf;
-        this.telefone = telefone;
-        this.endereco = endereço;
-        this.senha = senha;
+    public ClienteModel(int idCLIENTES, String nomeCliente, String emailCliente, String cpfCliente, String telefoneCliente, String enderecoCliente, String senhaCliente) {
+        this.idCLIENTES = idCLIENTES;
+        this.nomeCliente = nomeCliente;
+        this.emailCliente = emailCliente;
+        this.cpfCliente = cpfCliente;
+        this.telefoneCliente = telefoneCliente;
+        this.enderecoCliente = enderecoCliente;
+        this.senhaCliente = senhaCliente;
     }
 
-    public ClienteModel() {
+    public int getIdCLIENTES() {
+        return idCLIENTES;
     }
 
-    public String getNome() {
-        return nome;
+    public void setIdCLIENTES(int idCLIENTES) {
+        this.idCLIENTES = idCLIENTES;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getNomeCliente() {
+        return nomeCliente;
     }
 
-    public String getEmail() {
-        return email;
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getEmailCliente() {
+        return emailCliente;
     }
 
-    public String getCpf() {
-        return cpf;
+    public void setEmailCliente(String emailCliente) {
+        this.emailCliente = emailCliente;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public String getCpfCliente() {
+        return cpfCliente;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public void setCpfCliente(String cpfCliente) {
+        this.cpfCliente = cpfCliente;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public String getTelefoneCliente() {
+        return telefoneCliente;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public void setTelefoneCliente(String telefoneCliente) {
+        this.telefoneCliente = telefoneCliente;
     }
 
-    public void setEndereco(String endereço) {
-        this.endereco = endereço;
+    public String getEnderecoCliente() {
+        return enderecoCliente;
     }
 
-    public String getSenha() {
-        return senha;
+    public void setEnderecoCliente(String enderecoCliente) {
+        this.enderecoCliente = enderecoCliente;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public String getSenhaCliente() {
+        return senhaCliente;
     }
+
+    public void setSenhaCliente(String senhaCliente) {
+        this.senhaCliente = senhaCliente;
+    }
+
+   
+
+   
+
+  
+   
+
+    
    
    
    
