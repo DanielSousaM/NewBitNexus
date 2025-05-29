@@ -26,9 +26,6 @@ public class CodigoCaixa {
         this.tempo = tempo;
     }
   
-
-    
-
     public CodigoCaixa() {
     }
 

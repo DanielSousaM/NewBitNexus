@@ -12,7 +12,7 @@ package Model;
 
 
 public class ClienteModel {
-    private int idCLIENTE;
+    private int idCLIENTES;
      private String nomeCliente;
      private String emailCliente;
      private String cpfCliente; 
@@ -20,8 +20,8 @@ public class ClienteModel {
      private String enderecoCliente;
      private String senhaCliente;
 
-    public ClienteModel(int idCLIENTE, String nomeCliente, String emailCliente, String cpfCliente, String telefoneCliente, String enderecoCliente, String senhaCliente) {
-        this.idCLIENTE = idCLIENTE;
+    public ClienteModel(int idCLIENTES, String nomeCliente, String emailCliente, String cpfCliente, String telefoneCliente, String enderecoCliente, String senhaCliente) {
+        this.idCLIENTES = idCLIENTES;
         this.nomeCliente = nomeCliente;
         this.emailCliente = emailCliente;
         this.cpfCliente = cpfCliente;
@@ -33,12 +33,12 @@ public class ClienteModel {
     public ClienteModel() {
     }
 
-    public int getIdCLIENTE() {
-        return idCLIENTE;
+    public int getIdCLIENTES() {
+        return idCLIENTES;
     }
 
-    public void setIdCLIENTE(int idCLIENTE) {
-        this.idCLIENTE = idCLIENTE;
+    public void setIdCLIENTES(int idCLIENTES) {
+        this.idCLIENTES = idCLIENTES;
     }
 
     public String getNomeCliente() {
@@ -87,11 +87,5 @@ public class ClienteModel {
 
     public void setSenhaCliente(String senhaCliente) {
         this.senhaCliente = senhaCliente;
-    }
-     
-     
-     
-     
-     
-     
+    }    
 }

@@ -15,30 +15,30 @@ public class CadastroDeFuncionarioModel {
    // logico -> boolean
    // datas -> Date
    
-    private int idFUNCIONARIO;
+    private int idFUNCIONARIOS;
     private String nomeFuncionario;
-    private String datadenacimentoFuncionario;
+    private String datanascimentoFuncionario;
     private String cpfFuncionario;
     private String telefoneFuncionario;
     private String emailFuncionario;
     private String senhaFuncionario;
 
-    public CadastroDeFuncionarioModel(int idFUNCIONARIO, String nomeFuncionario, String datadenacimentoFuncionario, String cpfFuncionario, String telefoneFuncionario, String emailFuncionario, String senhaFuncionario) {
-        this.idFUNCIONARIO = idFUNCIONARIO;
+    public CadastroDeFuncionarioModel(int idFUNCIONARIOS, String nomeFuncionario, String datanascimentoFuncionario, String cpfFuncionario, String telefoneFuncionario, String emailFuncionario, String senhaFuncionario) {
+        this.idFUNCIONARIOS = idFUNCIONARIOS;
         this.nomeFuncionario = nomeFuncionario;
-        this.datadenacimentoFuncionario = datadenacimentoFuncionario;
+        this.datanascimentoFuncionario = datanascimentoFuncionario;
         this.cpfFuncionario = cpfFuncionario;
         this.telefoneFuncionario = telefoneFuncionario;
         this.emailFuncionario = emailFuncionario;
         this.senhaFuncionario = senhaFuncionario;
     }
 
-    public int getIdFUNCIONARIO() {
-        return idFUNCIONARIO;
+    public int getIdFUNCIONARIOS() {
+        return idFUNCIONARIOS;
     }
 
-    public void setIdFUNCIONARIO(int idFUNCIONARIO) {
-        this.idFUNCIONARIO = idFUNCIONARIO;
+    public void setIdFUNCIONARIO(int idFUNCIONARIOS) {
+        this.idFUNCIONARIOS = idFUNCIONARIOS;
     }
 
     public String getNomeFuncionario() {
@@ -49,12 +49,12 @@ public class CadastroDeFuncionarioModel {
         this.nomeFuncionario = nomeFuncionario;
     }
 
-    public String getDatadenacimentoFuncionario() {
-        return datadenacimentoFuncionario;
+    public String getDatanascimentoFuncionario() {
+        return datanascimentoFuncionario;
     }
 
-    public void setDatadenacimentoFuncionario(String datadenacimentoFuncionario) {
-        this.datadenacimentoFuncionario = datadenacimentoFuncionario;
+    public void setDatanascimentoFuncionario(String datanascimentoFuncionario) {
+        this.datanascimentoFuncionario = datanascimentoFuncionario;
     }
 
     public String getCpfFuncionario() {
@@ -88,9 +88,4 @@ public class CadastroDeFuncionarioModel {
     public void setSenhaFuncionario(String senhaFuncionario) {
         this.senhaFuncionario = senhaFuncionario;
     }
-
-   
-
-    
-   
 } // chve da class

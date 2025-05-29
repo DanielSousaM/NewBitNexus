@@ -14,18 +14,15 @@ public class MonitoramentoModel {
 // real - float ou double
 // logico - boolean 
 // datas - Dates
-private int idMAQUINA;
+private int idMAQUINAS;
     private String nomeMaquina, tipoMaquina;
 
-    public MonitoramentoModel(int idMAQUINA, String nomeMaquina, String tipoMaquina) {
-        this.idMAQUINA = idMAQUINA;
+    public MonitoramentoModel(int idMAQUINAS, String nomeMaquina, String tipoMaquina) {
+        this.idMAQUINAS = idMAQUINAS;
         this.nomeMaquina = nomeMaquina;
         this.tipoMaquina = tipoMaquina;
     }
-
-  
-
-    
+   
      public MonitoramentoModel() {
          
      }  
@@ -33,12 +30,12 @@ private int idMAQUINA;
      // getter serve para visualizar dados
      // setter serve para inserir dados
 
-    public int getIdMAQUINA() {
-        return idMAQUINA;
+    public int getIdMAQUINAS() {
+        return idMAQUINAS;
     }
 
-    public void setIdMAQUINA(int idMAQUINA) {
-        this.idMAQUINA = idMAQUINA;
+    public void setIdMAQUINAS(int idMAQUINAS) {
+        this.idMAQUINAS = idMAQUINAS;
     }
 
     public String getNomeMaquina() {
@@ -55,8 +52,5 @@ private int idMAQUINA;
 
     public void setTipoMaquina(String tipoMaquina) {
         this.tipoMaquina = tipoMaquina;
-    }
-
-   
-     
+    }    
 }
