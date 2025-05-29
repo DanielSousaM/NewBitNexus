@@ -15,24 +15,27 @@ public class CadastroDeFuncionarioModel {
    // logico -> boolean
    // datas -> Date
    
-    private String nomecompleto;
-    private String datadenacimento;
-    private String cpf;
-    private String fone;
-    private String email;
-    private String senha;
-    private String opcao;
-            
-    public CadastroDeFuncionarioModel(String nomecompleto, String datadenacimento, String cpf, String fone, String email, String senha,String opcao) {
-        this.nomecompleto = nomecompleto;
-        this.datadenacimento = datadenacimento;
-        this.cpf = cpf;
-        this.fone = fone;
-        this.email = email;
-        this.senha = senha;
-        this.opcao = opcao;
-    }
+    private int idFUNCIONARIOS;
+    private String nomeFuncionario;
+    private String datanascimentoFuncionario;
+    private String telefoneFuncionario;
+    private String cpfFuncionario;
+    private String emailFuncionario;
+    private String senhaFuncionario;
 
+    public CadastroDeFuncionarioModel(int idFUNCIONARIOS, String nomeFuncionario, String datanascimentoFuncionario, String telefoneFuncionario, String cpfFuncionario, String emailFuncionario, String senhaFuncionario) {
+        this.idFUNCIONARIOS = idFUNCIONARIOS;
+        this.nomeFuncionario = nomeFuncionario;
+        this.datanascimentoFuncionario = datanascimentoFuncionario;
+        this.telefoneFuncionario = telefoneFuncionario;
+        this.cpfFuncionario = cpfFuncionario;
+        this.emailFuncionario = emailFuncionario;
+        this.senhaFuncionario = senhaFuncionario;
+    }
+    
+            
+    
+    
     public CadastroDeFuncionarioModel() {
     }
     
@@ -42,65 +45,65 @@ public class CadastroDeFuncionarioModel {
 
        //gertter serve para visualizar os dados
 
-    public String getNomecompleto() {
-        return nomecompleto;
+    public int getIdFUNCIONARIOS() {
+        return idFUNCIONARIOS;
     }
 
-    public void setNomecompleto(String nomecompleto) {
-        this.nomecompleto = nomecompleto;
+    public void setIdFUNCIONARIOS(int idFUNCIONARIOS) {
+        this.idFUNCIONARIOS = idFUNCIONARIOS;
     }
 
-    public String getDatadenacimento() {
-        return datadenacimento;
+    public String getNomeFuncionario() {
+        return nomeFuncionario;
     }
 
-    public void setDatadenacimento(String datadenacimento) {
-        this.datadenacimento = datadenacimento;
+    public void setNomeFuncionario(String nomeFuncionario) {
+        this.nomeFuncionario = nomeFuncionario;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getDatanascimentoFuncionario() {
+        return datanascimentoFuncionario;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setDatanascimentoFuncionario(String datanascimentoFuncionario) {
+        this.datanascimentoFuncionario = datanascimentoFuncionario;
     }
 
-    public String getFone() {
-        return fone;
+    public String getTelefoneFuncionario() {
+        return telefoneFuncionario;
     }
 
-    public void setFone(String fone) {
-        this.fone = fone;
+    public void setTelefoneFuncionario(String telefoneFuncionario) {
+        this.telefoneFuncionario = telefoneFuncionario;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCpfFuncionario() {
+        return cpfFuncionario;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCpfFuncionario(String cpfFuncionario) {
+        this.cpfFuncionario = cpfFuncionario;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getEmailFuncionario() {
+        return emailFuncionario;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setEmailFuncionario(String emailFuncionario) {
+        this.emailFuncionario = emailFuncionario;
     }
 
-    public String getOpcao() {
-        return opcao;
+    public String getSenhaFuncionario() {
+        return senhaFuncionario;
     }
 
-    public void setOpcao(String opcao) {
-        this.opcao = opcao;
+    public void setSenhaFuncionario(String senhaFuncionario) {
+        this.senhaFuncionario = senhaFuncionario;
     }
-   
+
     
-       
-
+    
+    
     
    
    
